@@ -1,0 +1,327 @@
+/* ============
+   BOTAO SEJA LOGISTA
+   ============ */
+.btLojista,
+.btIcone,
+.btIcone span {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.btLojista {
+	position: absolute;
+	bottom: 0;
+	right: 75px;
+	width: 233px;
+	height: 48px;
+	line-height: 48px;
+	padding-right: 40px;
+	border: 1px solid#48b7c8;
+	text-align: right;
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	color: #FFF;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: block;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.btIcone {
+	background: #FFF;
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin-top: -18px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.btLojista:hover {
+	background: #FFF;
+	color: #009bb3;
+}
+
+.btLojista:hover .btIcone {
+	background: #009bb3;
+}
+
+.btLojista .btIcone span {
+	background: url('../img/icons/botoes.png') no-repeat;
+	background-position: 0 -252px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.btLojista:hover span {
+	background-position: 0 -216px;
+}
+
+
+/* ============
+   FILTRO LOJAS
+   ============ */
+.filtro {
+	display: block;
+}
+
+.blocoSelect {
+	float: left;
+	width: 49%;
+}
+
+.blocoSelectRight {
+	float: right;
+}
+
+.relative {
+	height: 15px;
+	line-height: 15px;
+	padding: 14px 20px;
+}
+
+.relative, 
+.relativeTexarea {
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #cacaca;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.btSelect {
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	padding-left: 20px;
+	line-height: 43px;
+}
+
+.relativeEstadoAberto,
+.relativeCidadeAberto {
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0; 
+	border-bottom: none;
+}
+
+.btSelect .icone,
+.setaSelectMobile {
+	background: url('../img/icons/seta_cinza.png') no-repeat;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	margin-top: -4px;
+}
+
+.setaSelectMobile {
+	right: -5px;
+	margin-top: -3px;
+}
+
+.btSelect .iconeCima {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.listaSelect {
+	background: #FFF;
+	height: 200px;
+	border: 1px solid #CACACA;
+	border-top: none;
+	position: absolute;
+	top: 42px;
+	left: -1px;
+	right: -1px;
+	z-index: 2;
+	padding: 0 14px 0 20px;
+	display: none;
+}
+
+#selectUl {
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.txtSelect,
+.selectLink,
+.labelSelect {
+	display: block;
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #696969;
+	font-size: 13px;
+}
+
+.selectLink {
+	padding: 10px 20px 10px 0;
+}
+
+.selectLink:hover {
+	color: #009bb3;
+}
+
+
+
+
+/* ============
+   SELECT MOBILE
+   ============ */
+.boxSelect {
+	height: 100%;
+	padding: 2px 0 0;
+	text-align: left;
+	position: relative;
+}
+
+.boxSelect .selectPrs {
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2
+}
+
+
+
+
+/* ============
+   MAPA LOJAS
+   ============ */
+.introMapaLojas {
+	display: block;
+	background: #2c2c2b;
+	font-size: 12px;
+	text-align: center;
+	color: #FFF;
+	padding: 13px 20px 15px;
+	margin-top: 15px;
+}
+
+#mapaLojas {
+	height: 470px;
+	background: #009bb3;
+}
+
+.infoLoja {
+	width: 300px;
+	padding: 15px;
+}
+
+.infoLoja .titulo,
+.infoLoja .endereco,
+.infoLoja .contatoLink {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #515151;
+	font-size: 13px;
+	display: block;
+	line-height: 1em;
+}
+
+.infoLoja .titulo {
+	font-size: 15px !important;
+	color: #009bb3;
+	padding-bottom: 7px;
+}
+
+.infoLoja .endereco {
+	line-height: 15px;
+}
+
+.contatoUl {
+	margin-top: 15px;
+}
+
+.contatoLi {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.contatoLink {
+	background: url('../img/icons/lojas.png') no-repeat;
+	padding-left: 17px;
+	background-position: 0 2px;
+}
+
+.contatoLink:hover {
+	color: #009bb3;
+}
+
+.contatoLinkEmail {
+	background-position: 0 -55px;
+}
+
+.contatoLinkInformacoes {
+	background-position: 0 -105px;
+	text-decoration: underline;
+	padding-top: 5px;
+}
+
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1023px) {
+	.paginaDescricao {
+		padding: 25px 0 0 25px;
+	}
+
+	.btLojista {
+		display: none;
+	}
+
+	.blocoSelect {
+		width: 100%;
+		float: none;
+	}
+
+	#mapaLojas {
+		height: 200px;
+	}
+}
+
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.btLojista .btIcone span {
+		background-image: url('../img/icons/botoes_2x.png');
+		background-size: 37px 288px;
+	}
+	
+	.contatoLink {
+		background-image: url('../img/icons/lojas_2x.png');
+		background-size: 11px 123px;
+	}
+}
+

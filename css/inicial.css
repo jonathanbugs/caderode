@@ -1,0 +1,484 @@
+/* ============
+   CATEGORIAS
+   ============ */
+.categorias {
+	background: url('../img/backgrounds/bg_opacidade.png') repeat;
+	height: 185px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -2px;
+	z-index: 2;
+}
+
+.categoriasUl {
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.categoriasLi {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.categoriasLink {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.categoriasLink:hover {
+	background: url('../img/backgrounds/link_categorias.png') repeat;
+}
+
+.categoriasBt {
+	padding: 65px 0 0 80px;
+	display: block;
+}
+
+.categoriasIcone {
+	width: 54px;
+	height: 54px;
+	background: #8ec642;
+	display: block;
+	position: relative;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	float: left;
+}
+
+.categoriasIconeCadeiras {
+	background: #faa61a;
+}
+
+.categoriasIcone .icone {
+	background: url('../img/icons/linhas.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.categoriasLink:hover .categoriasIcone .icone {
+	background-position: 0 -54px;
+}
+
+.categoriasIconeCadeiras .icone {
+	background-position: 0 -108px;
+}
+
+.categoriasLink:hover .categoriasIconeCadeiras .icone {
+	background-position: 0 -162px;
+}
+
+.categoriasBtTexto {
+	float: left;
+	margin-left: 10px;
+	text-align: left;
+	padding-top: 4px;
+}
+
+.categoriasBtTexto span {
+	display: block;
+	font-size: 14px;
+	color: #FFF;
+	line-height: 1em;
+}
+
+.categoriasBtTexto .btTituloLinha {
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-top: 4px;
+}
+
+
+
+/* ============
+   CONFORTO
+   ============ */
+.conforto {
+	background: #009bb3;
+	height: 550px;
+}
+
+.conteudoConforto {
+	background: url('../img/gerais/cadeira.jpg') no-repeat top left;
+	height: 100%;
+}
+
+.confortoTexto {
+	max-width: 375px;
+	text-align: left;
+	padding: 170px 180px 0 0;
+	float: right;
+}
+
+.confortoTitulo {
+	font-family: 'regan_altlight', arial, sans-serif;
+	font-size: 45px;
+	line-height: 1em;
+	padding-bottom: 40px;
+	display: block;
+}
+
+.confortoDescricao {
+	font-size: 16px;
+	display: block;
+	line-height: 20px;
+}
+
+
+
+/* ============
+   LINHAS DE PRODUTOS
+   ============ */
+.linhaheader {
+	background: #8ec642 url('../img/gerais/linha_mobiliario.jpg') no-repeat top right;
+	height: 300px;
+	padding-top: 100px;
+	text-align: left;
+}
+
+.linhaheaderCadeiras {
+	background: #fdb913 url('../img/gerais/linha_cadeiras.jpg') no-repeat top right;
+}
+
+.linhaTitulo {
+	background: url('../img/icons/linhas_titulos.png') no-repeat 0 12px;
+	font-family: 'regan_altlight', arial, sans-serif;
+	font-size: 60px;
+	line-height: 1em;
+	text-transform: uppercase;
+	display: block;
+	padding-left: 130px;
+	min-height: 63px;
+}
+
+.linhaheaderCadeiras .linhaTitulo {
+	background-position: 35px -383px;
+}
+
+.produtosLinha {
+	margin-top: -238px;
+	min-height: 218px;
+	padding-top: 20px;
+}
+
+.produtosTabs {
+	display: block;
+}
+
+.tabsUl {
+	height: 40px;
+	float: right;
+}
+
+.tabsLi {
+	margin-left: 2px;
+	float: left;
+}
+
+.tabsLink {
+	background: #2a2a29;
+	width: 145px;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #FFF;
+	display: block;
+}
+
+.tabsLink:hover,
+.tabsLinkAtivo {
+	background: #FFF;
+	color: #2a2a29;
+}
+
+.produtos {
+	background: #FFF;
+	padding: 75px 72px;
+}
+
+.produtosUl {
+	text-align: left;
+}
+
+.produtosUlCadeiras {
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+}
+
+.produtosLi {
+	float: left;
+	margin: 0 10px 10px;
+}
+
+.produtosUlCadeiras .produtosLi {
+	margin: 0;
+}
+
+.produtosLink {
+	width: 223px;
+	height: 193px;
+	padding: 6px;
+	display: block;
+	position: relative;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.produtosUlCadeiras .produtosLink {
+	width: 192px;
+	height: 298px;
+	border: 1px solid #e1e1e1;
+	border-top: 0;
+	border-left: 0;
+}
+
+.produtosLink:hover {
+	background: #8ec642;
+}
+
+.produtosUlCadeiras .produtosLink:hover {
+	background: #fdb913;
+}
+
+.produtosImg {
+	width: 100%;
+	display: block;
+}
+
+.produtoTitulo {
+	position: absolute;
+	top: 153px;
+}
+
+.produtosUlCadeiras .produtoTitulo {
+	top: 250px;
+	left: 30px;
+}
+
+.produtoTitulo span {
+	display: block;
+	color: #696969;
+	line-height: 1em;
+	font-size: 18px;
+	padding-left: 18px;
+}
+
+.produtoTitulo .titulo {
+	background: url('../img/icons/produto_titulo.png') no-repeat 0 4px;
+	text-transform: uppercase;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.produtosLink:hover .produtoTitulo span {
+	color: #FFF;
+}
+
+.produtosLink:hover .produtoTitulo .titulo {
+	background-position: 0 -17px;
+}
+
+
+
+
+/* ============
+   IMAGEM CADERODE
+   ============ */
+#imagemCaderode {
+	background-image: url('../img/gerais/caderode.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	max-width: 1920px;	
+	height: 420px;
+	position: relative;
+	z-index: 2;
+}
+
+.imagemCaderodeImg {
+	display: none;
+	width: 100%;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1290px) {
+	/* ============
+	   CONFORTO
+	   ============ */
+	.confortoTexto {
+		padding-right: 70px;
+	}
+
+	/* ============
+	   LINHAS DE PRODUTOS
+	   ============ */
+	.produtosUl {
+		width: 765px;
+	}
+
+	.produtosUlCadeiras .produtosLink {
+		width: 178px;
+	}
+}
+
+
+@media only screen and (max-width: 1023px) {
+	/* ============
+	   CATEGORIAS
+	   ============ */
+	.categorias {
+		background: #37332a;
+		height: auto;
+		position: relative;
+		padding: 0 0 40px;
+		bottom: 0;
+	}
+
+	.categoriasUl {
+		width: auto;
+	}
+
+	.categoriasLi {
+		float: none;
+		width: 100%;
+	}
+
+	.categoriasLiMobiliario {
+		padding-top: 40px;
+	}
+
+	.categoriasBt {
+		padding: 25px 0;
+	}
+
+	.categoriasLink:hover {
+		background: none
+	}
+
+
+
+	/* ============
+	   CONFORTO
+	   ============ */
+	.conforto {
+		height: auto;
+	}
+
+	.confortoTexto {
+		float: none;
+		padding: 70px 45px;
+		margin: 0 auto;
+	}
+
+	.confortoTitulo {
+		font-size: 36px;
+	}
+
+
+
+	/* ============
+	   LINHAS DE PRODUTOS
+	   ============ */
+	.produtosLinha {
+		margin-top: -180px;
+	}
+
+	.linhaheader {
+		background-image: none;
+		padding-top: 30px;
+	}
+
+	.tabsUl {
+		display: none;
+	}
+
+	.linhaTitulo {
+		padding-left: 3px;
+		line-height: 170px;
+		font-size: 45px;
+		margin-left: 25px;
+		letter-spacing: -0.05em;
+	}
+
+	.linhaheaderCadeiras .linhaTitulo {
+		background-position: 0 -383px;
+	}
+
+	.produtos {
+		padding: 30px;
+	}
+
+	.produtosUl {
+		width: auto;
+	}
+
+	.produtosLi {
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.produtosLink {
+		width: auto;
+	}
+
+
+
+	/* ============
+	   IMAGEM CADERODE
+	   ============ */
+	#imagemCaderode {
+		background: none;
+		height: auto;
+	}
+
+	.imagemCaderodeImg {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.conteudoConforto {
+		background-position: 110% -100px;
+	}
+}
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.categoriasIcone .icone {
+		background-image: url('../img/icons/linhas_2x.png');
+		background-size: 54px 216px;
+	}
+
+	.produtoTitulo .titulo {
+		background-image: url('../img/icons/produto_titulo_2x.png');
+		background-size: 14px 35px;
+	}
+
+	.linhaTitulo {
+		background-image: url('../img/icons/linhas_titulos_2x.png');
+		background-size: 72px 446px;
+	}
+}
+

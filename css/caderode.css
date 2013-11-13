@@ -1,0 +1,368 @@
+/* ============
+   CADERODE
+   ============ */
+.conteudoCaderode {
+	background-image: url('../img/gerais/a_caderode.jpg');
+	background-position: 50% 35%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	max-width: 1920px;	
+	height: 845px;
+	position: relative;
+	z-index: 2;
+}
+
+.imagemCaderodeImg {
+	width: 100%;
+	display: none;
+	max-width: 1920px;
+}
+
+.containerGeralCaderode {
+	position: relative;
+	height: 845px;
+}
+
+.blocoDescricao {
+	background: url('../img/backgrounds/a_caderode.png') repeat;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	max-width: 300px;
+	padding: 90px 140px 140px;
+	text-align: left;
+}
+
+.blocoDescricao p {
+	margin-bottom: 25px;
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 14px;
+	display: block;
+	color: #515151;
+	line-height: 19px;
+}
+
+.conteudoDescricao .titulo {
+	background: url('../img/icons/a_caderode.png') no-repeat;
+	font-family: 'regan_altlight', arial, sans-serif;
+	min-height: 48px;
+	padding-left: 80px;
+	margin-left: -80px;
+	text-transform: uppercase;
+	font-size: 44px;
+	display: block;
+	color: #696969;
+	line-height: 1em;
+	margin-bottom: 75px;
+}
+
+.caderodeDescricao {
+	background: #009bb3;
+	padding: 200px 0;
+}
+
+.caderodeDescricao .descricao {
+	color: #FFF;
+	display: block;
+	max-width: 735px;
+	font-size: 30px;
+	line-height: 1.3em;
+	margin: 0 auto;
+}
+
+
+
+/* ============
+   LINHA DO TEMPO
+   ============ */
+.linhaTempo {
+	padding-top: 230px;
+}
+
+.imagemlinhaTempo {
+	width: 100%;
+	display: block;
+}
+
+.fotosUl {
+}
+
+.fotosLi {
+	width: 238px;
+	float: left;
+	margin: 0 5px;
+}
+
+.fotosImg {
+	width: 100%;
+	display: block;
+}
+
+.historia,
+.logoLinhaTempo {
+	display: block;
+	margin: 255px auto;
+}
+
+.historia {
+	background: url('../img/icons/linha_tempo.png') no-repeat top center;
+	padding-top: 105px;
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 24px;
+	color: #5b5b5b;
+	line-height: 1em;
+}
+
+.logoLinhaTempo {
+	background: url('../img/logos/logo_linha_tempo.png') no-repeat;
+	width: 276px;
+	height: 113px;
+}
+
+.tempoHistoria {
+	max-width: 580px;
+	margin: 0 auto;
+}
+
+.blocoTempo {
+	position: relative;
+	padding-left: 100px;
+}
+
+.blocoTempo .tempoAno {
+	width: 100px;
+	position: absolute;
+	top: 44px;
+	bottom: 0;
+	font-family: 'regan_altlight', arial, sans-serif;
+	color: #515151;
+	font-size: 38px;
+	line-height: 0.9em;
+	display: block;
+	text-align: left;
+}
+
+.blocoTempoFirst .tempoAno {
+	top: -6px;
+}
+
+.blocoTempoLeft .tempoAno {
+	left: 0;
+}
+
+.blocoTempoRight .tempoAno {
+	right: 0;
+}
+
+.blocoTempoDescricao {
+	width: 318px;
+	padding: 55px 0;
+	text-align: left;
+	border-bottom: 2px solid #0fa1b7;
+	position: relative;
+}
+
+.blocoTempoLeft .blocoTempoDescricao {
+	border-left: 2px solid #0fa1b7;
+	padding-left: 40px;
+}
+
+.blocoTempoRight .blocoTempoDescricao {
+	border-right: 2px solid #0fa1b7;
+	padding-right: 40px;
+	text-align: right;
+}
+
+.blocoTempoLast .blocoTempoDescricao {
+	border-right: none;
+	border-bottom: none;
+}
+
+.barra {
+	background: #0fa1b7;
+	position: absolute;
+	top: 0;
+	right: -2px; 
+	width: 2px;
+	height: 50px;
+}
+
+.seletor {
+	background: #FFF;
+	width: 22px;
+	height: 22px;
+	border: 2px solid #0fa1b7;
+	display: block;
+	position: absolute;
+	top: 50px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	z-index: 2;
+}
+
+.blocoTempoFirst .seletor {
+	top: 0;
+}
+
+.blocoTempoLeft .seletor {
+	left: -14px;
+}
+
+.blocoTempoRight .seletor {
+	right: -14px;
+}
+
+.tempoTitulo {
+	display: block;
+	font-size: 18px;
+	color: #515151;
+	line-height: 1em;
+	margin-bottom: 20px;
+}
+
+.tempoDescricao {
+	display: block;
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 14px;
+	color: #696969;
+	line-height: 18px;
+}
+
+.blocoTempoLeft .tempoDescricao {
+	padding-right: 25px;
+}
+
+.blocoTempoRight .tempoDescricao {
+	padding-left: 25px;
+}
+
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1023px) {
+	/* ============
+	   CADERODE
+	   ============ */
+	.conteudoCaderode {
+		background: none;
+		height: auto;
+	}
+
+	.containerGeralCaderode {
+		height: auto;
+	}
+
+	.imagemCaderodeImg {
+		display: block;
+	}
+
+	.blocoDescricao {
+		position: relative;
+		padding: 80px 0 80px;
+		margin: 0 auto;
+	}
+
+	.conteudoDescricao .titulo {
+		margin: 0 0 30px 0;
+		font-size: 34px;
+		padding-left: 60px;
+		line-height: 48px;
+	}
+	
+	.caderodeDescricao {
+		padding: 70px 0;
+	}
+
+	.caderodeDescricao .descricao {
+		font-size: 20px;
+	}
+
+
+	/* ============
+	   LINHA DO TEMPO
+	   ============ */
+	.linhaTempo {
+		padding-top: 50px
+	}
+
+	.fotosLi {
+		float: none;
+		margin: 5px 0;
+	}
+
+	.historia,
+	.logoLinhaTempo { 
+		margin: 120px auto;
+	}
+
+	.blocoTempo .tempoAno {
+		top: 25px;
+	}
+
+	.blocoTempoFirst .tempoAno {
+		top: -6px;
+	}
+
+	.blocoTempoLeft .tempoAno {
+		left: 36px;
+	}
+
+	.blocoTempoRight .tempoAno {
+		right: 16px;
+	}
+
+	.blocoTempo {
+		padding-left: 0;
+		margin: 0 20px;
+	}
+
+	.blocoTempoDescricao {
+		width: auto;
+		padding-top: 80px;
+	}
+
+	.blocoTempoFirst .blocoTempoDescricao {
+		padding-top: 50px
+	}
+
+	.seletor { 
+		top: 33px;
+	}
+
+	.barra {
+		right: 0px; 
+	}
+
+	.blocoTempoLast .seletor {
+		right: -12px;
+	}
+}
+
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.conteudoDescricao .titulo {
+		background-image: url('../img/icons/a_caderode_2x.png');
+		background-size: 48px 48px;
+	}
+
+	.historia {
+		background-image: url('../img/icons/linha_tempo_2x.png');
+		background-size: 83px 82px;
+	}
+
+	.logoLinhaTempo {
+		background-image: url('../img/logos/logo_linha_tempo_2x.png');
+		background-size: 276px 113px;
+	}
+}
+

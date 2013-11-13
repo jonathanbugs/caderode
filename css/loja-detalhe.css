@@ -1,0 +1,362 @@
+.conteudoPaginaDescricao {
+	margin-top: -160px;
+}
+
+.conteudoLojaDetalhe {
+	padding: 0 25px;
+}
+
+/* ============
+   BOTOES
+   ============ */
+.btLojista,
+.btIcone,
+.btIcone span,
+.btVoltar {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.btLojista,
+.btVoltar {
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #48b7c8;
+	padding-right: 40px;
+	text-align: right;
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: block;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.btLojista {
+	position: absolute;
+	bottom: 0;
+	right: 75px;
+	width: 233px;
+	color: #FFF;
+}
+
+.btVoltar {
+	color: #696969;
+	max-width: 318px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.btLojista:hover {
+	background: #FFF;
+	color: #009bb3;
+}
+
+.btVoltar:hover {
+	background: #009bb3;
+	color: #FFF;
+}
+
+.btIcone {
+	background: #FFF;
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin-top: -18px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.btVoltar .btIcone {
+	background: #009bb3;
+}
+
+.btLojista:hover .btIcone {
+	background: #009bb3;
+}
+
+.btVoltar:hover .btIcone {
+	background: #FFF;
+}
+
+.btLojista .btIcone span {
+	background: url('../img/icons/botoes.png') no-repeat;
+	background-position: 0 -252px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.btLojista:hover .btIcone span {
+	background-position: 0 -216px;
+}
+
+.btVoltar .btIcone span {
+	background: url('../img/icons/rodape.png') no-repeat;
+	background-position: 0 -433px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 13px;
+	height: 8px;
+	z-index: 2;
+	margin: -4px 0 0 -9px; 
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+
+.btVoltar:hover .btIcone span {
+	background-position: 0 -422px;
+}
+
+.tituloLoja {
+	font-family: 'regan_altlight', arial, sans-serif;
+	font-size: 30px;
+	display: block;
+	text-transform: uppercase;
+	padding: 15px 0 0 22px;
+	line-height: 1em;
+}
+
+.blocoLoja {
+	display: block;
+	margin-bottom: 80px;
+	position: relative;
+	z-index: 1;
+}
+
+.blocoLojaLeft {
+	width: 50%;
+	float: left;
+}
+
+.blocoLojaRight {
+	width: 47%;
+	float: right;
+}
+
+.lojaDescricao {
+	padding: 60px 55px 0;
+	max-width: 350px;
+}
+
+.lojaDescricao p {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	line-height: 21px;
+	display: block;
+	font-size: 14px;
+	color: #515151;
+}
+
+.lojaFotos {
+	max-width: 500px;
+}
+
+.fotosLoja { 
+	width: 100%;
+}
+
+.fotosLoja img { 
+	width: 100%; 
+	height: auto 
+}
+
+.pagerFotos {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.pagerFotos span {
+	background: #dcdcdc;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 4px;
+	height: 10px;
+	width: 10px;
+	text-indent: -9999px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.pagerFotos .cycle-pager-active {
+	background: #515151;
+}
+
+.mapaLoja {
+	max-width: 510px;
+}
+
+#mapa {
+	width: 100%;
+	height: 360px;
+}
+
+.infosLoja {
+	max-width: 415px;
+}
+
+.blocoInfosLoja {
+	margin-bottom: 50px;
+}
+
+.blocoInfosLoja .titulo {
+	text-transform: uppercase;
+	border-bottom: 1px solid #dcdcdc;
+	display: block;
+	font-size: 18px;
+	color: #515151;
+	padding: 0 0 10px 20px;
+	margin-bottom: 20px;
+}
+
+.infosUl {
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+
+.infosLi,
+.infosLink {
+	font-family: 'source_sans_proregular';
+	color: #515151;
+	font-size: 14px;
+	display: block;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+
+.infosLink {
+	background: url('../img/icons/loja_detalhe.png') no-repeat;
+	padding-left: 25px;
+}
+
+.infosLinkFone {
+	background-position: 0 6px;
+	font-size: 30px;
+}
+
+.infosLinkFone span {
+	font-size: 20px;
+}
+
+.infosLinkEmail {
+	background-position: 0 -81px;
+}
+
+.infosLiEndereco {
+	margin: 13px 0 0 25px;
+	max-width: 270px;
+	line-height: 18px;
+}
+
+.infosUlHorarios .infosLi {
+	padding-left: 25px;
+}
+
+.linkRota {
+	display: block;
+	color: #515151;
+	text-decoration: underline;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.linkRota:hover {
+	text-decoration: none;
+	color: #48b7c8;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1150px) {
+	.lojaDescricao {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.paginaDescricao {
+		padding: 25px 0 0 25px;
+	}
+
+	.conteudoLojaDetalhe {
+		padding: 0;
+	}
+
+	.btLojista {
+		display: none;
+	}
+
+	.blocoSelect {
+		width: 100%;
+		float: none;
+	}
+
+	.blocoLojaLeft,
+	.blocoLojaRight {
+		width: 100%;
+		float: none;
+	}
+
+	.lojaFotos,
+	.mapaLoja,
+	.infosLoja {
+		margin: 0 auto;
+	}
+
+	.lojaDescricao {
+		padding: 0;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#mapa {
+		height: 250px;
+		margin-bottom: 50px;
+	}
+
+	.btVoltar {
+		padding-right: 15px;
+		font-size: 10px;
+	}
+
+	.blocoInfosLoja .titulo,
+	.infosUl {
+		padding-left: 0;
+	}
+}
+
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.btLojista .btIcone span {
+		background-image: url('../img/icons/botoes_2x.png');
+		background-size: 37px 288px;
+	}
+
+	.infosLink {
+		background-image: url('../img/icons/loja_detalhe_2x.png');
+		background-size: 17px 95px;
+	}
+}
+

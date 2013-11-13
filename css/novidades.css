@@ -1,0 +1,159 @@
+/* ============
+   NOVIDADES
+   ============ */
+.blocoConteudoNews {
+	position: relative;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 0 0 55px 100px;
+	margin-bottom: 55px;
+}
+
+.blocoConteudoNewsLast {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.novidadeData {
+	background: #009bb3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+}
+
+.novidadeData span {
+	font-family: 'regan_altmedium', arial, sans-serif;
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+.novidadeData .separador {
+	margin-left: -10px;
+	letter-spacing: -0.1em;
+}
+
+.novidadeData .dataDia {
+	font-family: 'regan_altregular';
+	font-size: 34px;
+	margin: 7px 0 5px;
+}
+
+.novidadeTitulo {
+	font-family: 'regan_altmedium', arial, sans-serif;
+	display: block;
+	font-size: 30px;
+	display: block;
+	color: #009bb3;
+	line-height: 1em;
+	padding-top: 20px;
+}
+
+.novidadeConteudo {
+	margin-top: 40px;
+}
+
+.novidadeDescricao {
+	width: 40%;
+	float: left;
+}
+
+.novidadeDescricao p {
+	font-size: 14px;
+	color: #696969;
+	display: block;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+.novidadeDescricao p a {
+	color: #009bb3;
+}
+
+.novidadeDescricao p a:hover {
+	text-decoration: underline;
+}
+
+.novidadeImagem {
+	max-width: 490px;
+	float: right;
+	width: 50%;
+}
+
+.novidadeImg,
+.novidadeImgMobile {
+	max-width: 490px;
+	display: block;
+	width: 100%;
+}
+
+.novidadeImgMobile {
+	display: none;
+	margin-bottom: 20px;
+}
+
+.legendaImg {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #696969;
+	display: block;
+	padding-top: 7px;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1023px) {
+	.blocoConteudoNews {
+		padding-left: 0;
+	}
+
+	.novidadeTitulo {
+		padding-top: 80px;
+	}
+
+	.novidadeData {
+		width: 100%;
+		text-align: left;
+	}
+
+	.novidadeData span {
+		line-height: 80px;
+		font-size: 16px;
+		float: left;
+	}
+
+	.novidadeData .dataDia {
+		margin: 0 5px 0 20px;
+		line-height: 70px;
+	}
+
+	.novidadeDescricao {
+		width: 100%;
+		float: none;
+		max-width: 490px;
+	}
+
+	.novidadeImagem {
+		display: none;
+	}
+
+	.novidadeImgMobile {
+		display: block;
+	}
+}
+
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	
+}
+

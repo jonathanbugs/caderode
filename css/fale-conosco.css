@@ -1,0 +1,523 @@
+/* ============
+   FORMULARIO
+   ============ */
+.conteudoGeral {
+	padding: 0 0 40px;
+}
+
+.blocoConteudoContato {
+	display: block;
+}
+
+.botoesLink,
+.botoesIcone,
+.botoesIcone span,
+.btEnviarContato {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.botoesIcone {
+	background: #009bb3;
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin-top: -18px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.btEnviarContato:hover .botoesIcone,
+.botoesLink:hover .botoesIcone {
+	background: #FFF;
+}
+
+.botoesIcone span {
+	background: url('../img/icons/botoes.png') no-repeat;
+	background-position: 0 -72px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.formulario {
+	background: #FFF;
+	width: 60%;
+	max-width: 580px;
+	float: left;
+	padding: 0 60px;
+}
+
+#formContato .blocoForm {
+	display: block;
+}
+
+.relative {
+	height: 15px;
+	line-height: 15px;
+	padding: 14px 20px;
+}
+
+.relative, 
+.relativeTexarea {
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #cacaca;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.relativeLeft {
+	width: 42%;
+	float: left;
+}
+
+.relativeRight {
+	width: 42%;
+	float: right;
+}
+
+#formContato .label,
+#formContato .input,
+#formContato .textarea {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #696969;
+	font-size: 13px;
+	display: block;
+	position: absolute;
+	left: 20px;
+}
+
+#formContato .label {
+	top: 14px;
+}
+
+#formContato .input {
+	height: 40px;
+}
+
+#formContato .relativeTexarea {
+	min-height: 160px;
+}
+
+#formContato .input,
+#formContato .textarea {
+	background: none;
+	top: 1px;
+	width: 93%;
+	border: none;
+	padding: 0;
+}
+
+#formContato .textarea {
+	height: 145px;
+	padding-top: 9px
+}
+
+#formContato textarea {
+	resize: none;
+}
+
+#formContato .btEnviarContato {
+	background: #FFF;
+	display: block;
+	position: relative;
+	border: 1px solid #cacaca;
+	width: 100%;
+	max-width: 193px;
+	height: 48px;
+	line-height: 48px;
+	text-align: right;
+	padding-right: 60px;
+	color: #696969;
+	text-transform: uppercase;
+	margin-top: 5px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#formContato .btEnviarContato:hover {
+	background: #009bb3;
+	color: #FFF;
+	border-color: #009bb3;
+}
+
+#formContato .botoesIconeEnviar span {
+	background-position: 0 0px;
+}
+
+#formContato .btEnviarContato:hover .botoesIconeEnviar span {
+	background-position: 0 -36px;
+}
+
+.formulario .errorBox {
+	display: none;
+	background: #afc84b;
+	border: none;
+	width: 100%;
+	height: 48px;
+	line-height: 48px; 
+	margin-top: 5px;
+	background: #ff0000;
+	text-align: center;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.formulario label.error {
+	display:none !important;
+}
+
+.relativeCidade {
+	float: left;
+	width: 69%;
+}
+
+.relativeEstado {
+	float: right;
+	width: 15%;
+}
+
+
+
+
+/* ============
+   SELECT ESTADOS
+   ============ */
+.btSelect {
+	text-align: left;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	padding-left: 20px;
+	line-height: 43px;
+}
+
+.relativeEstadoAberto {
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0; 
+	border-bottom: none;
+}
+
+.btSelect .icone,
+.setaSelectMobile {
+	background: url('../img/icons/seta_cinza.png') no-repeat;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	margin-top: -4px;
+}
+
+.setaSelectMobile {
+	right: -5px;
+	margin-top: -3px;
+}
+
+.btSelect .iconeCima {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.listaSelect {
+	background: #FFF;
+	height: 200px;
+	border: 1px solid #CACACA;
+	border-top: none;
+	position: absolute;
+	top: 42px;
+	left: -1px;
+	right: -1px;
+	z-index: 2;
+	padding: 0 14px 0 20px;
+	display: none;
+}
+
+#selectUl {
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.txtSelect,
+.selectLink,
+.labelSelect {
+	display: block;
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #696969;
+	font-size: 13px;
+}
+
+.selectLink {
+	padding: 10px 20px 10px 0;
+}
+
+.selectLink:hover {
+	color: #009bb3;
+}
+
+
+
+
+/* ============
+   SELECT ESTADOS MOBILE
+   ============ */
+.boxSelect {
+	height: 100%;
+	padding: 2px 0 0;
+	text-align: left;
+	position: relative;
+}
+
+.boxSelect .selectPrs {
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2
+}
+
+
+
+
+
+
+
+/* ============
+   CONTATOS
+   ============ */
+.contatos {
+	width: 40%;
+	float: right;
+}
+
+.formulario,
+.contatoUl {
+	padding-top: 60px;
+}
+
+.contatoUl,
+.botoesUl {
+	padding-left: 55px;
+	padding-right: 110px;
+}
+
+.contatoUl {
+	background: #009bb3;
+	height: 140px;
+}
+
+.contatoLi {
+	margin-bottom: 5px;
+}
+
+.contatoLi,
+.contatoLi .contatoLink {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	display: block;
+	line-height: 1em;
+}
+
+.contatoLi .contatoLinkFone {
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 32px;
+}
+
+.contatoLi .contatoLinkFone span {
+	font-size: 18px;
+}
+
+
+
+
+
+/* ============
+   BOTOES
+   ============ */
+.botoesUl {
+	margin-top: 60px;
+}
+
+.botoesLi {
+	margin-bottom: 10px;
+}
+
+.botoesLink {
+	background: #FFF;
+	display: block;
+	position: relative;
+	border: 1px solid #cacaca;
+	height: 48px;
+	line-height: 48px;
+	color: #696969;
+	padding-left: 55px;
+	text-transform: uppercase;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.botoesLink:hover {
+	background: #009bb3;
+	color: #FFF;
+	border-color: #009bb3; 
+}
+
+.botoesLink:hover span {
+	background-position: 0 -108px;
+}
+
+.botoesIconeTrabalhe span {
+	background-position: 0 -144px;
+}
+
+.botoesLink:hover .botoesIconeTrabalhe span {
+	background-position: 0 -180px;
+}
+
+.botoesIconeLogista span {
+	background-position: 0 -216px;
+}
+
+.botoesLink:hover .botoesIconeLogista span {
+	background-position: 0 -252px;
+}
+
+
+
+/* ============
+   MAPA
+   ============ */
+#mapa {
+	background: #009bb3;
+	margin-top: 40px;
+	height: 500px;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1290px) {
+	.formulario {
+		width: 45%;
+	}
+
+	.relativeLeft,
+	.relativeRight {
+		width: 39%;
+	}
+
+	.relativeCidade {
+		width: 63%;
+	}
+
+	.contatos {
+		width: 40%;
+	}
+
+	.contatoUl, 
+	.botoesUl {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.formulario {
+		float: none;
+		width: auto;
+		padding: 60px 20px;
+	}
+
+	.relativeLeft,
+	.relativeRight,
+	.relativeCidade,
+	.relativeEstado {
+		width: auto;
+		float: none;
+	}
+
+	.formulario,
+	.contatos {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	#formContato .btEnviarContato {
+		max-width: 100%;
+		text-align: center;
+		padding-left: 60px;
+	}
+
+	.contatos {
+		float: none;
+		width: auto;
+	}
+
+	.contatoUl, 
+	.botoesUl {
+		padding: 0 25px;
+	}
+
+	.contatoUl {
+		height: auto;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.botoesLink {
+		padding-left: 50px;
+	}
+
+	#mapa {
+		height: 250px;
+	}
+}
+
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.botoesIcone span {
+		background-image: url('../img/icons/botoes_2x.png');
+		background-size: 37px 288px;
+	}
+
+	.btSelect .icone,
+	.setaSelectMobile {
+		background-image: url('../img/icons/seta_cinza_2x.png');
+		background-size: 14px 8px;
+	}
+}
+

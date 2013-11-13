@@ -1,0 +1,322 @@
+.headerLinha {
+	background: #fdb913;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 383px;
+	padding-top: 220px;
+	margin-bottom: 200px;
+}
+
+.headerLinha .titulo {
+	background-position: 0 -383px;
+	padding-left: 75px;
+}
+
+
+
+/* ============
+   FOTO LINHA
+   ============ */
+.fotoLinha {
+	margin-top: 80px;
+	display: block;
+}
+
+.fotoLinhaLeft {
+	width: 50%;
+	float: left;
+	max-width: 545px;
+}
+
+.fotoLinhaRight {
+	background: red;
+	width: 45%;
+	float: right;
+}
+
+.fotoImg {
+	width: 100%;
+	display: block;
+}
+
+.designInteligente {
+	padding: 40px;
+	background: #FFF;
+	max-width: 430px;
+	text-align: left;
+	margin-right: 60px;
+	z-index: 100;
+}
+
+.logoDesign {
+	background-position: 0 -29px;
+}
+
+
+/* ============
+   ACABAMENTOS
+   ============ */
+.sectionAcabamentos .titulo {
+	font-size: 14px;
+	float: left;
+	line-height: 26px;
+	margin-right: 10px;
+}
+
+.acabamentosUl {
+	margin-top: 45px;
+}
+
+.acabamentosLi {
+	margin: 0 40px;
+	display: block;
+}
+
+.tipo {
+	float: left;
+	font-size: 14px;
+	display: block;
+	text-transform: uppercase;
+	color: #515151;
+	margin-right: 10px;
+	line-height: 26px;
+	width: 85px;
+	text-align: right;
+}
+
+.acabamentosTxt {
+	float: left;
+}
+
+
+
+
+/* ============
+   BOTOES
+   ============ */
+.botoesIcone {
+ 	background: #fdb913;
+}
+
+.botoesLink:hover {
+	background: #fdb913;
+	border-color: #fdb913;
+}
+
+.botoesLink:hover .botoesIcone span { 
+	background-position: 0 -80px;
+}
+
+.botoesLink:hover .botoesIconePdf span {
+	background-position: 0 -200px;
+}
+
+.botoesLink:hover .botoesIconeLoja span {
+	background-position: 0 -320px;
+}
+
+
+
+
+/* ============
+   PRODUTOS CATEGORIAS
+   ============ */
+.linhaCategoria {
+	padding-top: 0;
+}
+
+.linhaCategoria .titulo,
+.produtosCategoria .tituloCategoria {
+	border-bottom: 2px solid #fdb913;
+}
+
+.produtosCategoria {
+	margin-bottom: 80px;
+}
+
+.produtosCategoria .tituloCategoria {
+	font-size: 16px;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+}
+
+.produtosCategoriasUl {
+	border-left: 1px solid #E1E1E1;
+	border-top: 1px solid #E1E1E1;
+}
+
+.btFavoritoAtivo,
+.btFavorito:hover {
+	background-position: 0 -28px;
+}
+
+.produtosCategoriasLink:hover {
+	background: #fdb913;
+}
+
+.produtosCategoriasTitulo {
+	text-align: center;
+}
+
+.observacao {
+	font-family: 'source_sans_proregular';
+	color: #515151;
+	font-size: 11px;
+	display: block;
+	max-width: 750px;
+	margin: 0 auto 75px;
+	line-height: 16px;
+}
+
+
+
+/* ============
+   LINHA CADEIRAS
+   ============ */
+.headerRelacionados {
+	background: #fdb913;
+	padding: 60px 0 150px 0;
+}	
+
+.headerRelacionados .titulo {
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 24px;
+	display: block;
+	color: #FFF;
+	line-height: 1em;
+}
+
+.listaRelacionados {
+	background: #FFF;
+	padding: 50px 0 90px;
+	margin-top: -100px;
+}
+
+.relacionadosUl,
+.relacionadosLink {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.relacionadosUl {
+	max-width: 865px;
+}
+
+.relacionadosLi {
+	float: left;
+}
+
+.relacionadosLink {
+	background: #FFF;
+	display: block;
+	text-align: center;
+	width: 102px;
+	height: 145px;
+	border: 3px solid #FFF;
+}
+
+.relacionadosImagem {
+	text-align: center;
+	max-width: 75px;
+	display: block;
+	margin: 5px auto 12px;
+}
+
+.relacionadosImg {
+	display: inline-block;
+	width: 100%;
+}
+
+.relacionadosLink:hover {
+	border-color: #fdb913;
+}
+
+.relacionadosTitulo {
+	display: block;
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1em;
+	color: #515151;
+}
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1180px) {
+	.designInteligente {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.headerLinha {
+		background: #fdb913;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 320px;
+		padding-top: 70px;
+	}
+
+	.headerLinha .titulo {
+		padding-top: 80px;
+		padding-left: 0;
+	}
+
+	.fotoLinhaLeft {
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.fotoLinhaRight {
+		background: red;
+		width: 45%;
+		float: right;
+	}
+
+	.designInteligente {
+		display: none;
+	}
+
+	/*.sectionLinha {
+		margin-bottom: 40px;
+	}
+
+	.blocoDesign {
+		margin-bottom: 20px;
+	}
+
+	.designImg {
+		max-width: 80px;
+		margin-bottom: 10px;
+	}
+
+	.designDescricao {
+		padding-right: 0;
+	}*/
+
+
+
+	/* ============
+	   ACABAMENTOS
+	   ============ */
+	.sectionAcabamentos .titulo {
+		float: none;
+	}
+
+	.acabamentosLi {
+		margin: 30px 10px 0 -15px;
+		float: none;
+	}
+
+	.relacionadosUl {
+		max-width: 216px;
+	}
+}

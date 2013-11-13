@@ -1,0 +1,1854 @@
+@import url('erros.css');
+
+/* ============
+   RESET
+   ============ */
+html {
+	height: 100%;
+	overflow: auto;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
+body {
+	line-height: 1em;
+	text-align: center;
+	font-size: 12px;
+}
+
+ul {
+	list-style: none;
+}
+
+blockquote,q{
+	quotes:none;
+}
+
+hr {
+	display: none;
+}
+
+textarea {
+	overflow: auto;
+}
+
+select {
+	-webkit-appearance: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	background: none;
+}
+
+iframe {
+	border: none;
+	overflow: hidden;
+}
+
+* {
+	outline: 0 none;
+}
+
+a,a:hover {
+	text-decoration: none;
+}
+
+
+/* ============
+   CLEARFIX
+   ============ */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+
+/* ============
+   CLASSES PADROES
+   ============ */
+.ir { 
+	text-indent: -100%;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+}
+
+.table { 
+	display: table;
+}
+
+.tableCell { 
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+/* ============
+   FONTES
+   ============ */
+@font-face {
+	font-family: 'regan_altblack_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_black_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_black_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_black_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_black_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_black_italic-webfont.svg#regan_altblack_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altblack';
+	src: url('../fontes/the_northern_block_-_regan_alt_black-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_black-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_black-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_black-webfont.svg#regan_altblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altbold_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_bold_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_bold_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_bold_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_bold_italic-webfont.svg#regan_altbold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altbold';
+	src: url('../fontes/the_northern_block_-_regan_alt_bold-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_bold-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_bold-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_bold-webfont.svg#regan_altbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altdemibold_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_demibold_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_demibold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_demibold_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_demibold_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_demibold_italic-webfont.svg#regan_altdemibold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altdemibold';
+	src: url('../fontes/the_northern_block_-_regan_alt_demibold-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_demibold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_demibold-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_demibold-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_demibold-webfont.svg#regan_altdemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altextrabold_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_extrabold_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_extrabold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_extrabold_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_extrabold_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_extrabold_italic-webfont.svg#regan_altextrabold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altextrabold';
+	src: url('../fontes/the_northern_block_-_regan_alt_extrabold-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_extrabold-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_extrabold-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_extrabold-webfont.svg#regan_altextrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altheavy_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_heavy_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_heavy_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_heavy_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_heavy_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_heavy_italic-webfont.svg#regan_altheavy_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altheavy';
+	src: url('../fontes/the_northern_block_-_regan_alt_heavy-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_heavy-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_heavy-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_heavy-webfont.svg#regan_altheavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altitalic';
+	src: url('../fontes/the_northern_block_-_regan_alt_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_italic-webfont.svg#regan_altitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altlight_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_light_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_light_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_light_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_light_italic-webfont.svg#regan_altlight_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altlight';
+	src: url('../fontes/the_northern_block_-_regan_alt_light-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_light-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_light-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_light-webfont.svg#regan_altlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altmedium_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_medium_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_medium_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_medium_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_medium_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_medium_italic-webfont.svg#regan_altmedium_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altmedium';
+	src: url('../fontes/the_northern_block_-_regan_alt_medium-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_medium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_medium-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_medium-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_medium-webfont.svg#regan_altmedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altultra_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_ultra_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_ultra_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultra_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultra_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultra_italic-webfont.svg#regan_altultra_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altultra';
+	src: url('../fontes/the_northern_block_-_regan_alt_ultra-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_ultra-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultra-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultra-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultra-webfont.svg#regan_altultra') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altultralight_italic';
+	src: url('../fontes/the_northern_block_-_regan_alt_ultralight_italic-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_ultralight_italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultralight_italic-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultralight_italic-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultralight_italic-webfont.svg#regan_altultralight_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altultralight';
+	src: url('../fontes/the_northern_block_-_regan_alt_ultralight-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt_ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultralight-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultralight-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt_ultralight-webfont.svg#regan_altultralight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'regan_altregular';
+	src: url('../fontes/the_northern_block_-_regan_alt-webfont.eot');
+	src: url('../fontes/the_northern_block_-_regan_alt-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/the_northern_block_-_regan_alt-webfont.woff') format('woff'),
+		 url('../fontes/the_northern_block_-_regan_alt-webfont.ttf') format('truetype'),
+		 url('../fontes/the_northern_block_-_regan_alt-webfont.svg#regan_altregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_sans_proregular';
+	src: url('../fontes/sourcesanspro-regular-webfont.eot');
+	src: url('../fontes/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/sourcesanspro-regular-webfont.woff') format('woff'),
+		 url('../fontes/sourcesanspro-regular-webfont.ttf') format('truetype'),
+		 url('../fontes/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_sans_prosemibold';
+	src: url('../fontes/sourcesanspro-semibold-webfont.eot');
+	src: url('../fontes/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fontes/sourcesanspro-semibold-webfont.woff') format('woff'),
+		 url('../fontes/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+		 url('../fontes/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: #FFF;
+	font-family: 'regan_altmedium', arial, sans-serif;
+	color: #FFF;
+}
+
+h1,h2,h3,h4,h5,h6{
+}
+
+/* ============
+   CMS - FORMATACAO DE TAGS DO EDITOR
+   ============ */
+.cms p{}
+.cms a{text-decoration:underline;}
+.cms em,.cms i{}
+.cms b,.cms strong{}
+.cms u{}
+.cms ul,.cms ol{}
+.cms ul li{list-style:square inside;}
+.cms ol li{list-style:decimal inside;}
+.cms li{}
+.cms strike{}
+
+
+/* ============
+   ESTRUTURA DO SITE
+   ============ */
+#wrapper {
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	-moz-transition: color 0.3s ease 0s;
+	-webkit-transition: color 0.3s ease 0s;
+	-o-transition: color 0.3s ease 0s;
+	transition: color 0.3s ease 0s;
+}
+
+#header.headerHome {
+	position: relative;
+	height: 855px
+}
+
+#content {
+}
+
+#main {
+}
+
+#footer {
+	background: #2c2c2b;
+	border-top: 15px solid #009bb3;
+	min-height: 447px;
+	position: relative;
+}
+
+.container.
+.containerGeral {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+	position: relative;
+}
+
+.containerGeral {
+	margin: 0 55px;
+	display: block;
+}
+
+.geralTransition {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.bt {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.btAzul {
+	background: #009bb3;
+	color: #FFF;
+}
+
+.btAzulRodape {
+	width: 251px;
+	margin-top: 5px; 
+}
+
+.bt .icone {
+	background: url('../img/icons/rodape.png') no-repeat;
+	background-position: 0 -432px;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	left: 18px;
+	margin-top: -4px;
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.bt:hover .icone {
+	background-position: 0 -422px;
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.btAzul:hover {
+	background: #FFF;
+	color: #009bb3;
+}
+
+
+
+
+/* ============
+   CONTEUDO PAGINAS
+   ============ */
+.paginaHeader {
+	background: #009bb3;
+	height: 290px;
+	padding-top: 190px;
+	text-align: left;
+}
+
+.paginaTitulo {
+	font-family: 'regan_altlight', arial, sans-serif;
+	font-size: 44px;
+	line-height: 1em;
+	text-transform: uppercase;
+	padding-left: 20px;
+	display: block;
+}
+
+.paginaDescricao {
+	max-width: 375px;
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	display: block;
+	line-height: 20px;
+	padding: 40px 0 0 75px;
+}
+
+.linhaheaderCadeiras .linhaTitulo {
+	background-position: 35px -383px;
+}
+
+.conteudoPagina {
+	margin-top: -200px;
+	min-height: 160px;
+}
+
+.conteudoPaginaDescricao {
+	margin-top: -105px;
+}
+
+.conteudoGeral {
+	background: #FFF;
+	padding: 40px 20px;
+	text-align: left;
+	min-height: 80px;
+}
+
+
+
+
+/* ============
+   TOPO
+   ============ */
+.logoMenu {
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.logoMenu {
+	background: url('../img/backgrounds/bg_opacidade.png') repeat;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 79px;
+	z-index: 900;
+	padding-top: 58px;
+}
+
+.headerHome .logoMenu {
+	position: absolute;
+}
+
+.logo {
+	float: left;
+}
+
+.logoImg {
+	width: 165px;
+	display: block;
+}
+
+.navMenu {
+	float: left;
+}
+
+.menu {
+	float: right;
+	margin-top: -18px;
+}
+
+.menuLi {
+	float: left;
+	margin-left: 15px;
+}
+
+.menuLiHome,
+.menuLiFavoritos {
+	display: none;
+}
+
+.menuLink {
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 14px;
+	margin: 10px 0;
+	position: relative;
+	text-transform: uppercase;
+	padding: 12px 7px 15px;
+	-moz-transition: color 0.3s ease 0s;
+	-webkit-transition: color 0.3s ease 0s;
+	-o-transition: color 0.3s ease 0s;
+	transition: color 0.3s ease 0s;
+}
+
+.menuLink:before, 
+.menuLink:after {
+	background: #009bb3;
+	width: 100%;
+	content: "";
+	height: 3px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	transform: translateY(-10px);
+	-moz-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+	-webkit-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+}
+
+.menuLink:before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.menuLink:after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-o-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.menuLink:hover:before, 
+.menuLink:focus:before, 
+.menuLink:hover:after, 
+.menuLink:focus:after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.menuLinkHome {
+	background: url('../img/icons/topo.png') no-repeat 8px 13px;
+	width: 14px;
+	height: 14px;
+}
+
+.btMenu {
+	margin-top: 25px;
+	display: none;
+	position: relative;
+	z-index: 6;
+}
+
+.btMenu .icone {
+	background: url('../img/icons/menu.png') no-repeat right center;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-right: 25px;
+	color: #FFF;
+	line-height: 1em;
+}
+
+.btFecharMenu {
+	background: url('../img/icons/fechar_menu.png') no-repeat;
+	width: 18px;
+	height: 11px;
+	margin-top: 25px;
+	display: none;
+}
+
+.linksUl {
+	float: left;
+	margin-top: 19px;
+}
+
+.linksLi {
+	float: left;
+	margin-left: 25px;
+}
+
+.linksLink {
+	background: url('../img/icons/topo.png') no-repeat;
+	background-position: 0 -83px;
+	width: 18px;
+	height: 17px;
+}
+
+.linksLinkBuscar {
+	background-position: 0 -170px;
+}
+
+.blocoBuscar {
+	position: absolute;
+	width: 0;
+	max-width: 835px;
+	top: -15px;
+	right: 35px;
+	height: 50px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.buscaProdutos {
+	margin: 0 auto;
+}
+
+.blocoBuscar .relative {
+	border: 1px solid #565655;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	padding: 16px 20px 16px 70px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.blocoBuscar .label,
+.blocoBuscar .input {
+	font-family: 'source_sans_proregular';
+	font-size: 16px;
+	color: #FFF;
+	display: block;
+}
+
+.blocoBuscar .label {
+	position: absolute;
+	top: 18px;
+	left: 70px;
+}
+
+.blocoBuscar .input {
+	border: none;
+	background: none;
+	width: 100%;
+	height: 100%;
+}
+
+.blocoBuscar .btBuscarProdutos,
+.blocoBuscar .btBuscarProdutos .icone {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.blocoBuscar .btBuscarProdutos {
+	background: #009bb3;
+	width: 41px;
+	height: 40px;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.blocoBuscar .btBuscarProdutos .icone {
+	background: url('../img/icons/buscar.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.blocoBuscar .btBuscarProdutos:hover {
+	background: #FFF;
+}
+
+.blocoBuscar .btBuscarProdutos:hover .icone {
+	background-position: 0 -40px;
+}
+
+.blocoBuscar .fecharBusca {
+	background: url('../img/icons/fecha_busca.png') no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	width: 14px;
+	height: 14px;
+	margin-top: -5px;
+}
+
+
+
+
+/* ============
+   MENU FIXO
+   ============ */
+.headerFixo .logoMenu {
+	position: fixed;
+	height: 53px;
+	padding-top: 30px;
+	border-bottom: 2px solid #009bb3;
+}
+
+
+
+
+/* ============
+   BANNER
+   ============ */
+.blocoBanner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.bannerImg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
+.conteudoBanner {
+	padding-top: 220px;
+	display: block;
+}
+
+.blocoTexto {
+	float: left;
+	min-width: 250px;
+	padding-left: 120px;
+	text-align: left;
+	margin-right: 30px;
+	padding-top: 40px;
+}
+
+.blocoTexto .titulo {
+	color: #FFF;
+}
+
+.blocoTexto .titulo span {
+	font-family: 'regan_altlight', arial, sans-serif;
+	display: block;
+	font-size: 44px;
+	line-height: 1em;
+}
+
+.blocoTexto .titulo .tituloLinha {
+	text-transform: uppercase;
+	font-size: 53px;
+}
+
+.bannerDescricao {
+	font-family: 'regan_altregular', arial, sans-serif;
+	margin: 25px 0;
+	font-size: 16px;
+	line-height: 18px;
+	display: block;
+}
+
+.blocoImagem {
+	float: left;
+	max-width: 405px;
+}
+
+.blocoImagem img {
+	display: block;
+	width: 100%;
+}
+
+.btConheca {
+	background: url('../img/icons/conheca.png') no-repeat;
+	display: block;
+	font-family: 'regan_altregular', arial, sans-serif;
+	line-height: 18px;
+	min-height: 20px;
+	font-size: 16px;
+	color: #FFF;
+	padding-left: 30px;
+}
+
+.pageBanner {
+	position: absolute;
+	top: 0;
+	left: 55px;
+}
+
+.pageBanner span {
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 3px;
+	height: 18px;
+	width: 18px;
+	text-indent: -9999px;
+	border: 1px solid #5f5c55;
+	margin-top: 5px;
+	position: relative;
+}
+
+.pageBanner .cycle-pager-active {
+	background: #fdb913;
+	border-color: #fdb913; 
+	top: -5px;
+	height: 23px;
+}
+
+
+
+
+/* ============
+   RODAPE
+   ============ */
+.containerRodape {
+	height: 100%;
+}
+
+.containerGeralRodape {
+	padding-top: 120px;
+	display: inline-block;
+}
+
+.blocoRodape {
+	float: left;
+	text-align: left;
+	margin-right: 150px;
+}
+
+.blocoRodapeInfos {
+	margin-right: 0;
+}
+
+.blocoRodape .titulo {
+	background: url('../img/icons/rodape.png') no-repeat;
+	font-family: 'regan_altlight', arial, sans-serif;
+	font-size: 32px;
+	display: block;
+	text-transform: uppercase;
+	min-height: 35px;
+	line-height: 30px;
+	padding-left: 50px;
+}
+
+.blocoRodape .tituloNews {
+	background-position: 0 -193px;
+}
+
+.conteudoBloco {
+	margin: 35px 0 0 53px;
+}
+
+.conteudoBlocoContatos {
+	margin-top: 65px
+}
+
+.conteudoBlocoDescricao {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	font-size: 13px;
+	display: block;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+.formBuscaLoja .blocoForm {
+	display: block;
+}
+
+.formBuscaLoja .relative {
+	height: 15px;
+	line-height: 15px;
+	padding: 14px 20px;
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #505050;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.formBuscaLoja .relativeEstado {
+	float: left;
+	width: 45px;
+}
+
+.formBuscaLoja .relativeCidade {
+	float: right;
+	width: 115px;
+}
+
+
+
+
+/* ============
+   SELECT LOJAS
+   ============ */
+.formBuscaLoja .btSelect {
+	text-align: left;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	padding-left: 20px;
+	line-height: 43px;
+}
+
+.formBuscaLoja .relativeEstadoAberto,
+.formBuscaLoja .relativeCidadeAberto {
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0; 
+}
+
+.formBuscaLoja .btSelect .icone,
+.formBuscaLoja .setaSelectMobile {
+	background: url('../img/icons/seta_cinza.png') no-repeat;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	margin-top: -4px;
+}
+
+.formBuscaLoja .setaSelectMobile {
+	right: -5px;
+	margin-top: -3px;
+}
+
+.formBuscaLoja .btSelect .iconeCima {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.formBuscaLoja .listaSelectRodape {
+	background: #2c2c2b;
+	height: 150px;
+	border: 1px solid #505050;
+	border-top: none;
+	position: absolute;
+	top: 42px;
+	left: -1px;
+	right: -1px;
+	z-index: 2;
+	padding: 0 14px 0 20px;
+	display: none;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+
+.formBuscaLoja .selectUl {
+	width: 100%;
+	height: 130px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.formBuscaLoja .txtSelect,
+.formBuscaLoja .selectLink,
+.formBuscaLoja .labelSelect {
+	display: block;
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #FFF;
+	font-size: 13px;
+}
+
+.formBuscaLoja .selectLink {
+	padding: 10px 20px 10px 0;
+}
+
+.formBuscaLoja .selectLink:hover {
+	color: #009bb3;
+}
+
+
+
+
+/* ============
+   SELECT LOJAS MOBILE
+   ============ */
+.formBuscaLoja .boxSelect {
+	height: 100%;
+	padding: 2px 0 0;
+	text-align: left;
+	position: relative;
+}
+
+.formBuscaLoja .boxSelect .selectPrs {
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2
+}
+
+.formNews .relative {
+	border: 1px solid #484847;
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	padding: 9px 15px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.formNews .label,
+.formNews .input {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #FFF;
+	display: block;
+	font-size: 13px;
+}
+
+.formNews .label {
+	position: absolute;
+	top: 9px;
+	left: 15px;
+}
+
+.formNews .input {
+	width: 100%;
+	border: none;
+	background: none;
+}
+
+.formNews .bt {
+	margin-top: 10px;
+}
+
+.logoRodape {
+	background: url('../img/logos/logo.png') no-repeat;
+	width: 165px;
+	height: 21px;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.contatosLi,
+.contatosLi a {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #FFF;
+	font-size: 14px;
+	display: block;	
+	min-height: 15px;
+	text-align: left;
+}
+
+.contatosLi {
+	background: url('../img/icons/rodape.png') no-repeat;
+	background-position: 0 -563px;
+	padding-left: 25px;
+	margin-bottom: 7px;
+}
+
+.contatosLiEmail {
+	background-position: 0 -765px;
+}
+
+.spr {
+	background: url('../img/icons/spr.png') no-repeat;
+	width: 29px;
+	height: 9px;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+
+
+
+
+/* ============
+   MODAL
+   ============ */
+.modal {
+	display: none;
+	text-align: left;
+}
+
+.modal .headerModal {
+	background: #009bb3;
+	padding: 30px 35px 110px;
+}
+
+.headerModal .titulo {
+	font-family: 'regan_altlight', arial, sans-serif;
+	display: block;
+	font-size: 30px;
+	color: #FFF;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+.conteudoModal {
+	background: #FFF;
+	margin: -75px 10px 0;
+	padding: 30px;
+}
+
+.formularioModal {
+	min-height: 330px;
+}
+
+.formModal .blocoFormModal {
+	display: block;
+}
+
+.formModal .relativeModal {
+	height: 15px;
+	line-height: 15px;
+	padding: 14px 20px;
+}
+
+.relativeModal, 
+.relativeModalTexarea {
+	position: relative;
+	margin-bottom: 5px;
+	border: 1px solid #cacaca;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.relativeModalLeft {
+	width: 41.7%;
+	float: left;
+}
+
+.relativeModalRight {
+	width: 41.7%;
+	float: right;
+}
+
+.formModal .label,
+.formModal .input,
+.formModal .textarea {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #696969;
+	font-size: 13px;
+	display: block;
+	position: absolute;
+	left: 20px;
+}
+
+.formModal .label {
+	top: 14px;
+}
+
+.formModal .input {
+	height: 40px;
+}
+
+.formModal .relativeModalTexarea {
+	min-height: 160px;
+}
+
+.formModal .input,
+.formModal .textarea {
+	background: none;
+	top: 1px;
+	width: 93%;
+	border: none;
+	padding: 0;
+}
+
+.formModal .textarea {
+	height: 145px;
+	padding-top: 9px
+}
+
+.formModal textarea {
+	resize: none;
+}
+
+.formModal .btEnviarContato {
+	background: #FFF;
+	display: block;
+	position: relative;
+	border: 1px solid #cacaca;
+	width: 100%;
+	max-width: 193px;
+	height: 48px;
+	line-height: 48px;
+	text-align: right;
+	padding-right: 60px;
+	color: #696969;
+	text-transform: uppercase;
+	margin-top: 5px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.formModal .btEnviarContato:hover {
+	background: #009bb3;
+	color: #FFF;
+	border-color: #009bb3;
+}
+
+.formModal .botoesIconeEnviar span {
+	background-position: 0 0px;
+}
+
+.formModal .btEnviarContato:hover .botoesIconeEnviar span {
+	background-position: 0 -36px;
+}
+
+.formModal .errorBox {
+	display: none;
+	border: none;
+	width: 100%;
+	height: 48px;
+	line-height: 48px; 
+	margin-top: 5px;
+	background: #ff0000;
+	color: #FFF;
+	text-align: center;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.formularioModal label.error {
+	display: none !important;
+}
+
+.formModal .relativeModalCidade {
+	float: left;
+	width: 68.4%;
+}
+
+.formModal .relativeModalEstado {
+	float: right;
+	width: 15%;
+}
+
+
+.formModal .relativeInputFile {
+	position: relative;
+}
+
+.formModal .inputFile {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.formModal .filePrs {
+	font-size: 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	max-width: 100%;
+	z-index: 5;
+	background: red;
+	cursor: pointer;
+}
+
+.formModal .inputFile .btSelecionar {
+	background: url('../img/icons/seta_cinza.png') no-repeat;
+	position: absolute;
+	top: 50%;
+	width: 14px;
+	height: 8px;
+	margin-top: -5px;
+	right: 15px;
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+}
+
+
+
+
+/* ============
+   SELECT ESTADOS
+   ============ */
+.formModal .btSelectModal {
+	text-align: left;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	padding-left: 20px;
+	line-height: 43px;
+}
+
+.formModal .relativeModalEstadoAberto {
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0; 
+	border-bottom: none;
+}
+
+.formModal .btSelectModal .icone,
+.formModal .setaSelectMobile {
+	background: url('../img/icons/seta_cinza.png') no-repeat;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	margin-top: -4px;
+}
+
+.formModal .setaSelectMobile {
+	right: -5px;
+	margin-top: -3px;
+}
+
+.formModal .btSelectModal .iconeCima {
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.formModal .listaSelectModal {
+	background: #FFF;
+	height: 200px;
+	border: 1px solid #CACACA;
+	border-top: none;
+	position: absolute;
+	top: 42px;
+	left: -1px;
+	right: -1px;
+	z-index: 2;
+	padding: 0 14px 0 20px;
+	display: none;
+}
+
+.formModal .selectModalUl {
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.formModal .txtSelectModal,
+.formModal .selectLink,
+.formModal .labelSelect {
+	display: block;
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	color: #696969;
+	font-size: 13px;
+}
+
+.formModal .selectLink {
+	padding: 10px 20px 10px 0;
+}
+
+.formModal .selectLink:hover {
+	color: #009bb3;
+}
+
+
+
+
+/* ============
+   SELECT ESTADOS MOBILE
+   ============ */
+.formModal .boxSelect {
+	height: 100%;
+	padding: 2px 0 0;
+	text-align: left;
+	position: relative;
+}
+
+.formModal .boxSelect .selectPrs {
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2
+}
+
+
+
+
+
+
+
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1290px) {
+	/* ============
+	   TOPO
+	   ============ */
+	.menuLi {
+		margin-left: 5px;
+	}
+
+	.linksLi {
+		margin-left: 15px;
+	}
+
+	.blocoBuscar {
+		max-width: 735px;
+	}
+
+
+
+
+	/* ============
+	   RODAPE
+	   ============ */
+	.blocoRodape {
+		margin-right: 43px;
+	}
+
+	.conteudoBloco {
+		margin-left: 33px;
+	}
+}
+
+
+@media only screen and (max-width: 1023px) {
+	/* ============
+	   ESTRUTURA DO SITE
+	   ============ */
+	.containerGeral {
+		margin: 0 20px;
+	}
+
+	.paginaHeader  {
+		padding-top: 50px;
+	}
+
+	.paginaTitulo {
+		font-size: 36px;
+	}
+
+
+
+	/* ============
+	   TOPO
+	   ============ */
+	.menuLiHome,
+	.menuLiFavoritos {
+		display: block;
+	}
+
+	#header {
+		position: relative;
+	}
+
+	#header.headerHome {
+		height: auto;
+	}
+
+	.btMenu {
+		display: block;
+	}
+
+	.btMenuAberto {
+		display: none;
+	}
+
+	.logoMenu {
+		background: #373736;
+		height: 77px;
+		padding-top: 30px;
+		border-bottom: 11px solid #37332a;
+		position: relative;
+	}
+
+	.menuAberto .logoMenu {
+		padding-top: 0;
+	}
+
+	.logo {
+		float: none;
+	}
+
+	.menu {
+		float: none;
+		margin-top: 0;
+	}
+
+	.navMenu,
+	.menuUl {
+		float: none;
+		display: block;
+	}
+
+	.linksUl {
+		display: none;
+	}
+
+	.blocoMenu {
+		display: none;
+		background: #2c2c2b;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 0 20px 30px;
+	}
+
+	.btFecharMenu {
+		display: inline-block;
+	}
+
+	.menuLiIconeHome {
+		display: none;
+	}
+
+	.menuUl {
+		padding-top: 100px;
+	}
+
+	.menuLi {
+		float: none;
+		margin-left: 0;
+		border-bottom: 2px solid #373736;
+	}
+
+	.menuLiAtivo {
+		border-color: #009bb3;
+	}
+
+	.menuLiLast {
+		border-bottom: none;
+	}
+
+	.menuLink:before, 
+	.menuLink:after {
+		display: none;
+	}
+
+
+
+	/* ============
+	   BUSCA
+	   ============ */
+	.blocoBuscar {
+		top: 70px;
+		left: 0;
+		right: 0;
+		width: 288px;
+		margin: 0 auto;
+	}
+
+	.buscaProdutos {
+		max-width: 288px;
+		margin: 0 auto;
+	}
+
+	.blocoBuscar .relative {
+		padding: 16px 20px;
+	}
+
+	.blocoBuscar .label {
+		left: 20px;
+	}
+
+	.blocoBuscar .fecharBusca {
+		display: none;
+	}
+
+
+
+
+	/* ============
+	   BANNER
+	   ============ */
+	.conteudoBanner {
+		padding-top: 160px;
+	}
+
+	.banner {
+		position: relative;
+		min-height: 555px;
+		padding: 0 0 160px;
+		overflow: hidden;
+	}
+
+	.bannerImg {
+		display: none;
+	}
+
+	.bannerConteudo {
+		width: 100%;
+	}
+
+	.blocoTexto {
+		float: none;
+		padding: 0;
+		display: inline-block;
+		margin-left: 55px;
+		max-width: 100%;
+		padding-top: 250px;
+	}
+
+	.blocoImagem {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -110px;
+		max-width: 220px;
+	}
+	
+
+
+
+	/* ============
+	   RODAPE
+	   ============ */
+	.containerGeralRodape {
+		display: inline-block;
+		padding: 60px 0 50px;
+	}
+
+	.blocoRodape {
+		float: none;
+		margin-bottom: 50px;
+		margin-right: 0
+	}
+
+	.conteudoBloco {
+		margin-left: 0;
+	}
+
+
+
+	/* ============
+	   MODAL
+	   ============ */
+	.formModal .relativeModalLeft,
+	.formModal .relativeModalRight,
+	.formModal .relativeModalCidade,
+	.formModal .relativeModalEstado {
+		width: auto;
+		float: none;
+	}
+
+	.formModal .btEnviarContato {
+		max-width: 100%;
+		text-align: center;
+		padding-left: 60px;
+	}
+}
+
+
+
+
+
+/* ============
+   RETINA
+   ============ */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.menuLinkHome,
+	.linksLink {
+		background-image: url('../img/icons/topo_2x.png');
+		background-size: 18px 187px;
+	}
+
+	.btConheca {
+		background-image: url('../img/icons/conheca_2x.png');
+		background-size: 20px 20px;
+	}
+
+	.btMenu .icone {
+		background-image: url('../img/icons/menu_2x.png');
+		background-size: 15px 15px;
+	}
+
+	.btFecharMenu {
+		background-image: url('../img/icons/fechar_menu_2x.png');
+		background-size: 18px 11px;
+	}
+
+	.blocoBuscar .btBuscarProdutos .icone {
+		background-image: url('../img/icons/buscar_2x.png');
+		background-size: 41px 80px;
+	}
+
+	.bt .icone,
+	.blocoRodape .titulo,
+	.contatosLi {
+		background-image: url('../img/icons/rodape_2x.png');
+		background-size: 32px 777px;
+	}
+
+	.logoRodape {
+		background: url('../img/logos/logo_2x.png');
+		background-size: 165px 21px;
+	}
+
+	.spr {
+		background-image: url('../img/icons/spr_2x.png');
+		background-size: 29px 9px;
+	}
+}
+
+
+
+
+
+
+
