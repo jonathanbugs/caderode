@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-11-14 11:07:49
+<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 16:36:53
          compiled from "templates/fale-conosco.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15121858225284cb256a4167-77467501%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1775997003528a5e453081b5-26803058%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '81d2ea940585d8e9b74eca1418c4ab58d11ac960' => 
     array (
       0 => 'templates/fale-conosco.tpl',
-      1 => 1384261891,
+      1 => 1384434625,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15121858225284cb256a4167-77467501',
+  'nocache_hash' => '1775997003528a5e453081b5-26803058',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5284cb256ea418_75080769',
+  'unifunc' => 'content_528a5e45352082_41919893',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5284cb256ea418_75080769')) {function content_5284cb256ea418_75080769($_smarty_tpl) {?><!-- NOVIDADES -->
+<?php if ($_valid && !is_callable('content_528a5e45352082_41919893')) {function content_528a5e45352082_41919893($_smarty_tpl) {?><!-- NOVIDADES -->
 <section class="conteudoLinha">
 	<header class="paginaHeader">
 		<div class="container">
@@ -187,7 +187,7 @@ lojas/">
 								<li class="botoesLi">
 									<a class="botoesLink btModal" href="#modalLojista">
 										<span class="botoesIcone botoesIconeLogista"><span></span></span>
-										Seja um logista Caderode
+										Seja um lojista Caderode
 									</a>
 								</li>
 							</ul>

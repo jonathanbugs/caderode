@@ -37,6 +37,7 @@
 .linkFotos {
 	float: left;
 	margin-right: 0.5%;
+	position: relative;
 }
 
 .linkFotosLast {
@@ -47,6 +48,25 @@
 	display: block;
 	width: 100%;
 	max-height: 105px;
+}
+
+.linkFotos:after {
+	border: 5px solid transparent;
+	content: "";
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.linkFotos.cycle-pager-active:after,
+.linkFotos:hover:after {
+	border: 5px solid #8EC642;
 }
 
 .designInteligente {

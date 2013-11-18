@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 15:52:15
+<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 16:44:18
          compiled from "templates/_rodape.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:705867301528a53cf3fb9f0-15034810%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:258294969528a600265e9d4-52275210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '705867301528a53cf3fb9f0-15034810',
+  'nocache_hash' => '258294969528a600265e9d4-52275210',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_528a53cf471da0_97655706',
+  'unifunc' => 'content_528a60026d4d99_06730846',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_528a53cf471da0_97655706')) {function content_528a53cf471da0_97655706($_smarty_tpl) {?><footer id="footer">
+<?php if ($_valid && !is_callable('content_528a60026d4d99_06730846')) {function content_528a60026d4d99_06730846($_smarty_tpl) {?><footer id="footer">
 	<div class="container containerRodape">
 		<div class="containerGeral containerGeralRodape clearfix">
 			<div class="blocoRodape">
