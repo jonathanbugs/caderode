@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 11:24:21
+<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 15:52:15
          compiled from "templates/_topo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:193294072528a15056b63f5-64104361%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1786587196528a53cf230b40-31219236%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7b9331a1b79c2af12eb8cdecd4323cbd20e19b3b' => 
     array (
       0 => 'templates/_topo.tpl',
-      1 => 1384255942,
+      1 => 1384796740,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '193294072528a15056b63f5-64104361',
+  'nocache_hash' => '1786587196528a53cf230b40-31219236',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_528a1505727964_55797678',
+  'unifunc' => 'content_528a53cf32f520_95536841',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_528a1505727964_55797678')) {function content_528a1505727964_55797678($_smarty_tpl) {?><header id="header" class="<?php if ($_smarty_tpl->tpl_vars['sessao']->value=='inicial'){?>headerHome<?php }?>">
+<?php if ($_valid && !is_callable('content_528a53cf32f520_95536841')) {function content_528a53cf32f520_95536841($_smarty_tpl) {?><header id="header" class="<?php if ($_smarty_tpl->tpl_vars['sessao']->value=='inicial'){?>headerHome<?php }?>">
 	<section class="logoMenu">
 		<div class="container">
 			<div class="containerGeral clearfix">
@@ -73,10 +73,16 @@ logos/logo_2x.png" alt="<?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 favoritos/">Favoritos</a>
 								</li>
 								<li class="menuLi geralTransition">
-									<a class="menuLink" href="javascript:;">Mobiliários</a>
+									<a class="menuLink menuLinkDrop" href="javascript:;">
+										Mobiliários
+										<span class="setaDrop"></span>
+									</a>
 								</li>
 								<li class="menuLi geralTransition">
-									<a class="menuLink" href="javascript:;">Cadeiras</a>
+									<a class="menuLink menuLinkDrop" href="javascript:;">
+										Cadeiras
+										<span class="setaDrop"></span>
+									</a>
 								</li>
 								<li class="menuLi geralTransition">
 									<a class="menuLink" href="<?php echo $_smarty_tpl->tpl_vars['BASE_DIR']->value;?>
@@ -114,6 +120,301 @@ fale-conosco/">Fale Conosco</a>
 		</div>
 	</section>
 
+	<div class="menuProdutos">
+		<ul class="tabsMenuUl clearfix">
+			<li class="tabsMenuLi tabsMenuLiFirst">
+				<a class="tabsMenuLink tabsMenuLinkAtivo" href="javascript:;" data-tipo="todas">Todas as linhas</a>
+			</li>
+			<li class="tabsMenuLi">
+				<a class="tabsMenuLink" href="javascript:;" data-tipo="diretoria">Diretoria</a>
+			</li>
+			<li class="tabsMenuLi">
+				<a class="tabsMenuLink" href="javascript:;" data-tipo="operacional">Operacional</a>
+			</li>
+		</ul>
+
+		<div class="container">
+			<div class="containerGeral">
+				<ul id="todas" class="listaProdutosUl clearfix">
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/4.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C40</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/5.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C50</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/6.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C60</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/7.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C70</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/8.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C80</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/9.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C90</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/4.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C40</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/5.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C50</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/6.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C60</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/7.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C70</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/8.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C80</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/9.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C90</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D30</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul id="diretoria" class="listaProdutosUl clearfix">
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/4.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C40</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+menu/5.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C50</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul id="operacional" class="listaProdutosUl clearfix">
+					<li class="listaProdutosLi">
+						<span class="semProdutos">
+							Não foram encontrados produtos nesta categoria.
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a class="btFecharMenuDrop" href="javascript:;"><span></span></a>
+	</div>
+
 	<?php if ($_smarty_tpl->tpl_vars['sessao']->value=='inicial'){?>
 	<section class="banner">
 		<div class="blocoBanner" style="background: #fdb913">
@@ -123,7 +424,7 @@ fale-conosco/">Fale Conosco</a>
 gerais/banner1.jpg" alt="" />
 					<div class="container">
 						<div class="conteudoBanner clearfix">
-							<div class="banner" data-cycle-fx='fade' data-cycle-timeout='0' data-speed="1000" data-slides='.bannerConteudo' data-cycle-pager=".pageBanner">
+							<div class="banner" data-cycle-fx='fade' data-cycle-log="false" data-cycle-timeout='0' data-speed="1000" data-slides='.bannerConteudo' data-cycle-pager=".pageBanner">
 								<div class="bannerConteudo">
 									<div class="blocoTexto">
 										<span class="titulo">

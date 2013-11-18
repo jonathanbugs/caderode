@@ -102,6 +102,7 @@ function init(){
 	imgRetina();
 	abrirMenu();
 	menuFixo();
+	menuDrop();
 	abrirBusca();
 	modal();
 	validaFormModalLojista();
@@ -124,6 +125,7 @@ $(window).on('resize', function(){
 	windowHeight = $window.height();
 	windowWidth = $window.width();
 	menuFixo();
+	menuDrop();
 });
 
 
@@ -237,6 +239,7 @@ function menuFixo(){
 				var scr = $(window).scrollTop();
 				if (scr >= 1) {
 					header.addClass('headerFixo');
+
 				} else {
 					header.removeClass('headerFixo');
 				}
@@ -244,6 +247,49 @@ function menuFixo(){
 		}
 	}
 }
+
+
+
+/* ============
+   MENU DROP DOWN
+   ============ */
+function menuDrop(){
+	if (windowWidth > 1023){
+		var menuDrop = $('.menuProdutos');
+
+		if (!isiPad && !isiPhone && !isiAndroid){
+			$('.menuLinkDrop').on('click', function() {
+				var ele = $(this);
+				menuDrop.addClass('menuDropAberto');
+				$('.menuLinkDrop').removeClass('menuLinkDropAtivo');
+				ele.addClass('menuLinkDropAtivo');
+			});
+
+			$('.btFecharMenuDrop').on('click', function() {
+				menuDrop.removeClass('menuDropAberto');
+				$('.menuLinkDrop').removeClass('menuLinkDropAtivo');
+			});
+
+			$(".tabsMenuLink").on('click', function(e){
+				var tab = $(this),
+					dataLista,
+					listaProdutosMenu = $('.menuProdutos');
+
+				$('.tabsMenuLink').removeClass('tabsMenuLinkAtivo');
+				tab.addClass('tabsMenuLinkAtivo');
+
+				dataLista = tab.attr('data-tipo');
+				console.log(dataLista);
+
+				listaProdutosMenu.find('.listaProdutosUl').hide();
+				listaProdutosMenu.find('#'+dataLista).css({
+					'display': 'inline-block'
+				});
+			});	
+		}
+	}
+}
+
 
 
 

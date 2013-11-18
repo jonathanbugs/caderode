@@ -38,10 +38,16 @@
 									<a class="menuLink" href="{$BASE_DIR}favoritos/">Favoritos</a>
 								</li>
 								<li class="menuLi geralTransition">
-									<a class="menuLink" href="javascript:;">Mobiliários</a>
+									<a class="menuLink menuLinkDrop" href="javascript:;">
+										Mobiliários
+										<span class="setaDrop"></span>
+									</a>
 								</li>
 								<li class="menuLi geralTransition">
-									<a class="menuLink" href="javascript:;">Cadeiras</a>
+									<a class="menuLink menuLinkDrop" href="javascript:;">
+										Cadeiras
+										<span class="setaDrop"></span>
+									</a>
 								</li>
 								<li class="menuLi geralTransition">
 									<a class="menuLink" href="{$BASE_DIR}caderode/">A Caderode</a>
@@ -74,6 +80,272 @@
 		</div>
 	</section>
 
+	<div class="menuProdutos">
+		<ul class="tabsMenuUl clearfix">
+			<li class="tabsMenuLi tabsMenuLiFirst">
+				<a class="tabsMenuLink tabsMenuLinkAtivo" href="javascript:;" data-tipo="todas">Todas as linhas</a>
+			</li>
+			<li class="tabsMenuLi">
+				<a class="tabsMenuLink" href="javascript:;" data-tipo="diretoria">Diretoria</a>
+			</li>
+			<li class="tabsMenuLi">
+				<a class="tabsMenuLink" href="javascript:;" data-tipo="operacional">Operacional</a>
+			</li>
+		</ul>
+
+		<div class="container">
+			<div class="containerGeral">
+				<ul id="todas" class="listaProdutosUl clearfix">
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/4.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C40</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/5.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C50</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/6.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C60</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/7.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C70</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/8.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C80</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/9.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C90</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/4.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C40</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/5.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C50</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/6.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C60</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/7.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C70</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/8.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C80</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/9.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C90</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha D30</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul id="diretoria" class="listaProdutosUl clearfix">
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/1.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C10</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/2.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C20</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/3.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C30</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/4.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C40</span>
+						</a>
+					</li>
+					<li class="listaProdutosLi">
+						<a href="javascript:;" class="listaProdutosLink">
+							<span class="listaProdutosImagem">
+								<img class="listaProdutosImg" src="{$IMG_DIR}menu/5.jpg" alt=""/>
+							</span>
+							<span class="listaProdutosTitulo">Linha C50</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul id="operacional" class="listaProdutosUl clearfix">
+					<li class="listaProdutosLi">
+						<span class="semProdutos">
+							Não foram encontrados produtos nesta categoria.
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a class="btFecharMenuDrop" href="javascript:;"><span></span></a>
+	</div>
+
 	{if $sessao eq 'inicial'}
 	<section class="banner">
 		<div class="blocoBanner" style="background: #fdb913">
@@ -82,7 +354,7 @@
 					<img class="bannerImg" src="{$IMG_DIR}gerais/banner1.jpg" alt="" />
 					<div class="container">
 						<div class="conteudoBanner clearfix">
-							<div class="banner" data-cycle-fx='fade' data-cycle-timeout='0' data-speed="1000" data-slides='.bannerConteudo' data-cycle-pager=".pageBanner">
+							<div class="banner" data-cycle-fx='fade' data-cycle-log="false" data-cycle-timeout='0' data-speed="1000" data-slides='.bannerConteudo' data-cycle-pager=".pageBanner">
 								<div class="bannerConteudo">
 									<div class="blocoTexto">
 										<span class="titulo">
