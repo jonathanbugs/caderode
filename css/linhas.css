@@ -47,7 +47,7 @@
 
 .blocoDesign {
 	display: table;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .designImg {
@@ -296,6 +296,133 @@
 	color: #FFF;
 }
 
+.observacao {
+	font-family: 'source_sans_proregular';
+	color: #515151;
+	font-size: 11px;
+	display: block;
+	max-width: 750px;
+	margin: 0 auto;
+	line-height: 16px;
+}
+
+
+
+
+/* ============
+   BOTOES OPCOES DETALHE
+   ============ */
+.opcoesProdutoLink,
+.opcoesProdutoIcone,
+.opcoesProdutoIcone span,
+.opcoesProdutoTitulo {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.opcoesProdutoUl {
+	margin: 65px 0;
+}
+
+.opcoesProdutoLi {
+	float: left;
+	margin: 0 3px 5px;
+}
+
+.opcoesProdutoLink {
+	display: block;
+	position: relative;
+	border: 1px solid #d2d2d2;
+	height: 63px;
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	color: #515151;
+	font-size: 12px;
+	text-align: center;
+	width: 220px;
+	text-transform: uppercase;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.opcoesProdutoIcone {
+ 	background: #fdb913;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 15px;
+ 	margin-top: -20px;
+ 	width: 40px;
+ 	height: 40px;
+ 	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.opcoesProdutoIcone span {
+	background: url('../img/icons/opcoes_detalhe.png') no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.opcoesProdutoLink:hover {
+	background: #fdb913;
+	border-color: #fdb913;
+}
+
+.opcoesProdutoTitulo {
+	padding: 20px 0 0 30px;
+	display: block;
+	color: #696969;
+	font-size: 11px;
+}
+
+.opcoesProdutoLink:hover .opcoesProdutoTitulo {
+	color: #FFF;
+}
+
+.opcoesProdutoTitulo span {
+	display: block;
+}
+
+.opcoesProdutoLink:hover .opcoesProdutoIcone {
+	background: #FFF;
+}
+
+.opcoesProdutoLink:hover .opcoesProdutoIcone span {
+	background-position: 0 -40px;
+}
+
+.opcoesProdutoIconeOrcamento span {
+	background-position: 0 -120px;
+}
+
+.opcoesProdutoLink:hover .opcoesProdutoIconeOrcamento span {
+	background-position: 0 -160px;
+}
+
+.opcoesProdutoIconeLoja span {
+	background-position: 0 -240px;
+}
+
+.opcoesProdutoLink:hover .opcoesProdutoIconeLoja span {
+	background-position: 0 -280px;
+}
+
+.opcoesProdutoIconeFacebook span {
+	background-position: 0 -360px;
+}
+
+.opcoesProdutoLink:hover .opcoesProdutoIconeFacebook span {
+	background-position: 0 -400px;
+}
+
+
+
 
 
 /* ============
@@ -323,17 +450,21 @@
 
 
 	/* ============
+	   BOTOES OPCOES DETALHE
+	   ============ */
+	.opcoesProdutoLi {
+		float: none;
+		margin: 0 0 5px 0;
+	}
+
+
+	/* ============
 	   PRODUTOS CATEGORIAS
 	   ============ */
 	.produtosCategoriasLi {
 		float: none;
 	}
 }
-
-
-
-
-
 
 
 
@@ -366,6 +497,11 @@
 	.btFavorito {
 		background-image: url('../img/icons/estrela_2x.png');	
 		background-size: 15px 42px;
+	}
+
+	.opcoesProdutoIcone span {
+		background-image: url('../img/icons/opcoes_detalhe_2x.png');
+		background-size: 41px 480px;
 	}
 }
 

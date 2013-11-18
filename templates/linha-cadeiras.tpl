@@ -8,34 +8,37 @@
 					<span class="linha">Cadeiras</span>
 					<span class="tituloLinha">Linha C10 Chroma</span>
 				</span>
+			</div>
+		</div>
+	</header>
 
+	<section class="fotoLinha clearfix">
+		<div class="container">
+			<div class="containerGeral">
+				<div class="fotoLinhaLeft">
+					<img class="fotoImg" src="{$IMG_DIR}linhas/cadeiras.png" alt="">
+				</div>
 
-				<div class="fotoLinha clearfix">
-					<div class="fotoLinhaLeft">
-						<img class="fotoImg" src="{$IMG_DIR}linhas/cadeiras.png" alt="">
-					</div>
-
-					<div class="fotoLinhaRight">
-						<div class="designInteligente">
-							<span class="logoDesign"></span>
-							<div class="blocoDesign">
-								<img class="designImg" src="{$IMG_DIR}linhas/design_inteligente3.jpg" alt="" />
-								<p class="designDescricao">
-									Linhas anatômicas combinando cromado à tela, além de apoio para cabeça com detalhe anatômico acompanhando o design do encosto.
-								</p>
-							</div>
-							<div class="blocoDesign">
-								<img class="designImg" src="{$IMG_DIR}linhas/design_inteligente4.jpg" alt="" />
-								<p class="designDescricao">
-									Regulagem de bloqueio/desbloqueio do encosto sob o assento através do dispositivo lateral, além do braço regulável na vertical.
-								</p>
-							</div>
+				<div class="fotoLinhaRight">
+					<div class="designInteligente">
+						<span class="logoDesign"></span>
+						<div class="blocoDesign">
+							<img class="designImg" src="{$IMG_DIR}linhas/design_inteligente3.jpg" alt="" />
+							<p class="designDescricao">
+								Linhas anatômicas combinando cromado à tela, além de apoio para cabeça com detalhe anatômico acompanhando o design do encosto.
+							</p>
+						</div>
+						<div class="blocoDesign">
+							<img class="designImg" src="{$IMG_DIR}linhas/design_inteligente4.jpg" alt="" />
+							<p class="designDescricao">
+								Regulagem de bloqueio/desbloqueio do encosto sob o assento através do dispositivo lateral, além do braço regulável na vertical.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
+	</section>
 
 	<section class="sectionLinha sectionAcabamentos">
 		<div class="container">

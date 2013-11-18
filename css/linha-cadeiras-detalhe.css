@@ -1,0 +1,320 @@
+.headerLinha {
+	background: #fdb913;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 275px;
+	padding-top: 220px;
+}
+
+.headerLinha .titulo {
+	background-position: 0 -383px;
+	padding-left: 75px;
+}
+
+.fotoDetalhe {
+	display: block;
+	margin-top: -125px;
+}
+
+.produtoDetalhe {
+	display: block;
+}
+
+.produtoFoto {
+	background: #FFF;
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.produtoFotoConteudo {
+	padding: 50px 55px 0;
+}
+
+.produtoTitulo {
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	display: block;
+	color: #696969;
+	font-size: 14px;
+	line-height: 1em;
+	margin-bottom: 20px;
+}
+
+.fotosProduto { 
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.fotosProduto img { 
+	width: 100%; 
+	height: auto 
+}
+
+.pagerFotos {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.pagerFotos span {
+	background: #dcdcdc;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 4px;
+	height: 10px;
+	width: 10px;
+	text-indent: -9999px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.pagerFotos .cycle-pager-active {
+	background: #515151;
+}
+
+.produtoDescricao {
+	width: 50%;
+	float: right;
+	text-align: left;
+	padding-top: 310px;
+}
+
+.produtoDescricao p {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	font-size: 14px;
+	display: block;
+	color: #696969;
+	line-height: 18px;
+	max-width: 350px;
+}
+
+
+
+/* ============
+   ESPECIFICACOES
+   ============ */
+.sectionEspecificacoes {
+	padding-top: 65px;
+}
+
+.caracteristicas {
+	display: block;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.tabelaCaracteristicas {
+	width: 48%;
+	float: left;
+	color: #696969;
+	vertical-align: middle;
+	border: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+.tabelaCaracteristicas .left {
+	text-align: left;
+	padding-left: 35px;
+}
+
+.tabelaCaracteristicas thead,
+.tabelaCaracteristicas tbody {
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+.tabelaCaracteristicas thead td {
+	padding: 5px 0;
+}
+
+.tabelaCaracteristicas thead td span {
+	text-transform: none;
+}
+
+.tabelaCaracteristicas thead .borda {
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 10px;
+}
+
+.tabelaCaracteristicas tbody {
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	font-size: 12px;
+	padding-top: 15px;
+}
+
+.tabelaCaracteristicas tbody td {
+	padding: 1px 0;
+}
+
+.tabelaCaracteristicas tbody .margin {
+	padding-top: 15px;
+}
+
+.acabamentosDisponiveis {
+	float: right;
+	width: 48%;
+}
+
+.acabamentosDisponiveis .titulo {
+	display: block;
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	font-size: 14px;
+	color: #696969;
+	text-transform: uppercase;
+	line-height: 70px;
+	border-bottom: 1px solid #dcdcdc;
+	height: 52px;
+}
+
+.acabamentosLi {
+	margin: 15px 0 15px -15px;
+	float: none;
+	display: block;
+}
+
+.tipo {
+	float: left;
+	font-size: 14px;
+	display: block;
+	text-transform: uppercase;
+	color: #515151;
+	margin-right: 10px;
+	line-height: 26px;
+	width: 85px;
+	text-align: right;
+}
+
+.acabamentosTxt {
+	float: left;
+}
+
+
+
+/* ============
+   PRODUTOS RELACIONADOS
+   ============ */
+.relacionadosUl {
+	max-width: 774px;
+	border-left: 1px solid #E1E1E1;
+	border-top: 1px solid #E1E1E1;
+}
+
+.relacionadosLink {
+	background: #FFF;
+	width: 116px;
+	height: 192px;
+	padding: 6px;
+	border: 1px solid #e1e1e1;
+	border-top: 0;
+	border-left: 0;
+}
+
+.relacionadosImagem {
+	max-width: 117px;
+	margin: 0 auto;
+}
+
+.relacionadosLink:hover {
+	background: #fdb913;
+}
+
+.relacionadosLink:hover .relacionadosTitulo {
+	color: #FFF;
+}
+
+.relacionadosTitulo {
+	width: 100%;
+	height: 60px;
+	display: table;
+}
+
+.relacionadosTitulo .tableCell {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+
+/* ============
+   MEDIA QUERIES
+   ============ */
+@media only screen and (max-width: 1023px) {
+	.headerLinha {
+		padding-top: 70px;
+		height: auto;
+	}
+
+	.headerLinha .titulo {
+		padding-top: 80px;
+		padding-left: 0;
+	}
+
+	.fotoDetalhe {
+		margin-top: 0;
+	}
+
+	.produtoFoto,
+	.produtoDescricao {
+		width: 100%;
+		float: none;
+	}
+
+	.produtoFoto {
+		text-align: center;
+	}
+
+	.produtoDescricao {
+		padding-top: 65px;
+	}
+
+	.produtoDescricao .descricao {
+		margin: 0 auto;
+	}
+
+
+	/* ============
+	   ESPECIFICACOES
+	   ============ */
+	.sectionEspecificacoes {
+		padding-top: 65px;
+	}
+
+	.caracteristicas {
+		display: block;
+		max-width: 750px;
+		margin: 0 auto;
+	}
+
+	.tabelaCaracteristicas,
+	.acabamentosDisponiveis {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.tabelaCaracteristicas .left {
+		padding-left: 10px;
+	}
+
+	.acabamentosDisponiveis {
+		margin-top: 65px;
+	}
+
+
+
+	/* ============
+	   PRODUTOS RELACIONADOS
+	   ============ */
+	.relacionadosUl {
+		max-width: 238px;
+	}
+
+	.relacionadosLink {
+		width: 106px;
+		height: 182px;
+	}
+}

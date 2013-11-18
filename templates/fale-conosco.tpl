@@ -152,7 +152,7 @@
 								<li class="botoesLi">
 									<a class="botoesLink btModal" href="#modalLojista">
 										<span class="botoesIcone botoesIconeLogista"><span></span></span>
-										Seja um logista Caderode
+										Seja um lojista Caderode
 									</a>
 								</li>
 							</ul>

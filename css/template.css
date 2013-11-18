@@ -1529,6 +1529,83 @@ h1,h2,h3,h4,h5,h6{
 
 
 
+/* ============
+   PRODUTOS RELACIONADOS
+   ============ */
+.headerRelacionados {
+	background: #fdb913;
+	padding: 60px 0 150px 0;
+}	
+
+.headerRelacionados .titulo {
+	font-family: 'regan_altregular', arial, sans-serif;
+	font-size: 24px;
+	display: block;
+	color: #FFF;
+	line-height: 1em;
+}
+
+.listaRelacionados {
+	background: #FFF;
+	padding: 50px 0 90px;
+	margin-top: -100px;
+}
+
+.relacionadosUl,
+.relacionadosLink {
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.relacionadosUl {
+	max-width: 865px;
+}
+
+.relacionadosLi {
+	float: left;
+}
+
+.relacionadosLink {
+	background: #FFF;
+	display: block;
+	text-align: center;
+	width: 102px;
+	height: 145px;
+	border: 3px solid #FFF;
+}
+
+.relacionadosImagem {
+	text-align: center;
+	max-width: 75px;
+	display: block;
+	margin: 5px auto 12px;
+}
+
+.relacionadosImg {
+	display: inline-block;
+	width: 100%;
+}
+
+.relacionadosLink:hover {
+	border-color: #fdb913;
+}
+
+.relacionadosTitulo {
+	display: block;
+	font-family: 'source_sans_proregular', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1em;
+	color: #515151;
+}
+
+.relacionadosTitulo span {
+	display: block;
+}
+
+
 
 
 
@@ -1791,6 +1868,15 @@ h1,h2,h3,h4,h5,h6{
 		max-width: 100%;
 		text-align: center;
 		padding-left: 60px;
+	}
+
+
+
+	/* ============
+	   PRODUTOS RELACIONADOS
+	   ============ */
+	.relacionadosUl {
+		max-width: 216px;
 	}
 }
 

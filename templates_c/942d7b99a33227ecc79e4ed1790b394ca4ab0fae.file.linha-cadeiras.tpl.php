@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-11-13 12:21:44
+<?php /* Smarty version Smarty-3.1.12, created on 2013-11-13 14:22:05
          compiled from "templates/linha-cadeiras.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:22026441852838af8eef997-30168509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:800709865283a72d77cb42-20869402%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '942d7b99a33227ecc79e4ed1790b394ca4ab0fae' => 
     array (
       0 => 'templates/linha-cadeiras.tpl',
-      1 => 1384346934,
+      1 => 1384358062,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '22026441852838af8eef997-30168509',
+  'nocache_hash' => '800709865283a72d77cb42-20869402',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_52838af905e982_97431982',
+  'unifunc' => 'content_5283a72d848658_30977870',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52838af905e982_97431982')) {function content_52838af905e982_97431982($_smarty_tpl) {?><!-- LINHA CADEIRAS -->
+<?php if ($_valid && !is_callable('content_5283a72d848658_30977870')) {function content_5283a72d848658_30977870($_smarty_tpl) {?><!-- LINHA CADEIRAS -->
 <section class="conteudoLinha">
 	<header class="headerLinha">
 		<img class="bannerImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
@@ -34,37 +34,40 @@ gerais/banner1.jpg" alt="" />
 					<span class="linha">Cadeiras</span>
 					<span class="tituloLinha">Linha C10 Chroma</span>
 				</span>
+			</div>
+		</div>
+	</header>
 
-
-				<div class="fotoLinha clearfix">
-					<div class="fotoLinhaLeft">
-						<img class="fotoImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+	<section class="fotoLinha clearfix">
+		<div class="container">
+			<div class="containerGeral">
+				<div class="fotoLinhaLeft">
+					<img class="fotoImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
 linhas/cadeiras.png" alt="">
-					</div>
+				</div>
 
-					<div class="fotoLinhaRight">
-						<div class="designInteligente">
-							<span class="logoDesign"></span>
-							<div class="blocoDesign">
-								<img class="designImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+				<div class="fotoLinhaRight">
+					<div class="designInteligente">
+						<span class="logoDesign"></span>
+						<div class="blocoDesign">
+							<img class="designImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
 linhas/design_inteligente3.jpg" alt="" />
-								<p class="designDescricao">
-									Linhas anatômicas combinando cromado à tela, além de apoio para cabeça com detalhe anatômico acompanhando o design do encosto.
-								</p>
-							</div>
-							<div class="blocoDesign">
-								<img class="designImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
+							<p class="designDescricao">
+								Linhas anatômicas combinando cromado à tela, além de apoio para cabeça com detalhe anatômico acompanhando o design do encosto.
+							</p>
+						</div>
+						<div class="blocoDesign">
+							<img class="designImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
 linhas/design_inteligente4.jpg" alt="" />
-								<p class="designDescricao">
-									Regulagem de bloqueio/desbloqueio do encosto sob o assento através do dispositivo lateral, além do braço regulável na vertical.
-								</p>
-							</div>
+							<p class="designDescricao">
+								Regulagem de bloqueio/desbloqueio do encosto sob o assento através do dispositivo lateral, além do braço regulável na vertical.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
+	</section>
 
 	<section class="sectionLinha sectionAcabamentos">
 		<div class="container">
