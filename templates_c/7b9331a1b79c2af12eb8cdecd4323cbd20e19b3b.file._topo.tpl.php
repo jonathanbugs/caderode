@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 10:13:51
+<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 11:24:21
          compiled from "templates/_topo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:453648132528a047f4af705-83245708%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:193294072528a15056b63f5-64104361%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '453648132528a047f4af705-83245708',
+  'nocache_hash' => '193294072528a15056b63f5-64104361',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_528a047f5110e2_18076540',
+  'unifunc' => 'content_528a1505727964_55797678',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_528a047f5110e2_18076540')) {function content_528a047f5110e2_18076540($_smarty_tpl) {?><header id="header" class="<?php if ($_smarty_tpl->tpl_vars['sessao']->value=='inicial'){?>headerHome<?php }?>">
+<?php if ($_valid && !is_callable('content_528a1505727964_55797678')) {function content_528a1505727964_55797678($_smarty_tpl) {?><header id="header" class="<?php if ($_smarty_tpl->tpl_vars['sessao']->value=='inicial'){?>headerHome<?php }?>">
 	<section class="logoMenu">
 		<div class="container">
 			<div class="containerGeral clearfix">

@@ -60,7 +60,6 @@
 	width: 50%;
 	float: right;
 	text-align: center;
-	background: yellow;
 }
 
 .produtoImg {
@@ -82,69 +81,52 @@
 /* ============
    ESPECIFICACOES
    ============ */
-/*.sectionEspecificacoes {
-	padding-top: 65px;
-}
-
 .caracteristicas {
 	display: block;
 	max-width: 850px;
 	margin: 0 auto;
 }
 
-.tabelaCaracteristicas {
+.tamanhosDisponiveis .titulo {
+	display: block;
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	font-size: 14px;
+	color: #696969;
+	text-transform: uppercase;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 20px 0 20px 35px;
+}
+
+.tamanhosDisponiveis {
 	width: 48%;
 	float: left;
 	color: #696969;
-	vertical-align: middle;
 	border: 0;
 	padding: 0;
 	border-collapse: collapse;
-}
-
-.tabelaCaracteristicas .left {
 	text-align: left;
-	padding-left: 35px;
 }
 
-.tabelaCaracteristicas thead,
-.tabelaCaracteristicas tbody {
-	font-family: 'regan_altdemibold', arial, sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-	line-height: 1em;
-}
-
-.tabelaCaracteristicas thead td {
-	padding: 5px 0;
-}
-
-.tabelaCaracteristicas thead td span {
-	text-transform: none;
-}
-
-.tabelaCaracteristicas thead .borda {
-	border-bottom: 1px solid #dcdcdc;
-	padding-bottom: 10px;
-}
-
-.tabelaCaracteristicas tbody {
+.tabelaCaracteristicas {
 	font-family: 'source_sans_proregular', arial, sans-serif;
 	font-size: 12px;
-	padding-top: 15px;
+	padding-left: 20px;
 }
 
-.tabelaCaracteristicas tbody td {
-	padding: 1px 0;
+.tabelaCaracteristicas td {
+	text-transform: uppercase;
+	padding: 2px 15px;
 }
 
-.tabelaCaracteristicas tbody .margin {
-	padding-top: 15px;
+.tabelaCaracteristicas .titulos {
+	font-family: 'regan_altdemibold', arial, sans-serif;
+	padding: 30px 0 15px 15px;
 }
 
 .acabamentosDisponiveis {
 	float: right;
 	width: 48%;
+	text-align: left;
 }
 
 .acabamentosDisponiveis .titulo {
@@ -153,32 +135,34 @@
 	font-size: 14px;
 	color: #696969;
 	text-transform: uppercase;
-	line-height: 70px;
 	border-bottom: 1px solid #dcdcdc;
-	height: 52px;
+	padding: 20px 0 20px 35px;
+}
+
+.listaAcabamentos {
+	margin: 30px 40px 0;
+}
+
+.acabamentosUl {
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
 }
 
 .acabamentosLi {
-	margin: 15px 0 15px -15px;
-	float: none;
 	display: block;
+	float: left;
+	width: 155px;
+	margin-bottom: 10px;
 }
 
-.tipo {
-	float: left;
-	font-size: 14px;
-	display: block;
-	text-transform: uppercase;
-	color: #515151;
-	margin-right: 10px;
-	line-height: 26px;
-	width: 85px;
-	text-align: right;
+.acabamentosUl .jspVerticalBar .jspDrag {
+	background: #8ec642;
 }
 
 .acabamentosTxt {
 	float: left;
-}*/
+}
 
 
 
@@ -320,36 +304,40 @@
 
 	.produtoDescricao {
 		padding: 65px 15px 0;
+		max-width: 510px;
+		margin: 0 auto;
 	}
 
 
 	/* ============
 	   ESPECIFICACOES
 	   ============ */
-	/*.sectionEspecificacoes {
-		padding-top: 65px;
-	}
-
 	.caracteristicas {
 		display: block;
-		max-width: 750px;
-		margin: 0 auto;
+		max-width: 510px;
+		margin: 65px auto 0;
 	}
 
-	.tabelaCaracteristicas,
+	.tamanhosDisponiveis,
 	.acabamentosDisponiveis {
 		width: 100%;
 		float: none;
 		margin: 0 auto;
 	}
 
-	.tabelaCaracteristicas .left {
-		padding-left: 10px;
+	.tamanhosDisponiveis .titulo,
+	.tabelaCaracteristicas {
+		padding-left: 20px;
+	}
+
+	.tabelaCaracteristicas .titulos,
+	.tabelaCaracteristicas td  {
+		padding-left: 0;
 	}
 
 	.acabamentosDisponiveis {
 		margin-top: 65px;
-	}*/
+	}
 
 
 

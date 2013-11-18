@@ -35,94 +35,124 @@
 		</div>
 	</section>
 
-	<!--section class="sectionEspecificacoes">
+	<section class="sectionEspecificacoes">
 		<div class="container">
 			<div class="containerGeral">
 				<div class="caracteristicas clearfix">
-					<table class="tabelaCaracteristicas">
-						<thead>
+					
+					<div class="tamanhosDisponiveis">
+						<span class="titulo">Tamanhos disponíveis</span>
+
+						<table class="tabelaCaracteristicas">
 							<tr>
-								<td></td>
-								<td colspan="2">DIMENSÃO <span>(mm)</span></td>
+								<td class="titulos">Referências</td>
+								<td class="titulos">L</td>
+								<td class="titulos">P</td>
+								<td class="titulos">A</td>
 							</tr>
 							<tr>
-								<td class="borda left">Características</td>
-								<td class="borda">MINIMA</td>
-								<td class="borda">MÁXIMA</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="margin left">Altura</td>
-								<td>1140</td>
-								<td>1200</td>
+								<td>MDIRE3GPAL1919</td>
+								<td>1900</td>
+								<td>1900</td>
+								<td>740</td>
 							</tr>
 							<tr>
-								<td class="margin left">Largura</td>
-								<td>-</td>
-								<td>650</td>
+								<td>MDIRE3GPAL1919</td>
+								<td>1900</td>
+								<td>1900</td>
+								<td>740</td>
 							</tr>
 							<tr>
-								<td class="margin left">Profundidade</td>
-								<td>680</td>
-								<td>950</td>
+								<td>MDIRE3GPAL1919</td>
+								<td>1900</td>
+								<td>1900</td>
+								<td>740</td>
 							</tr>
-							<tr>
-								<td class="margin left">Altura Encosto</td>
-								<td>-</td>
-								<td>580</td>
-							</tr>
-							<tr>
-								<td class="margin left">Largura Encosto</td>
-								<td>-</td>
-								<td>490</td>
-							</tr>
-							<tr>
-								<td class="margin left">Altura do Assento</td>
-								<td>430</td>
-								<td>490</td>
-							</tr>
-							<tr>
-								<td class="margin left">Largura do Assento</td>
-								<td>-</td>
-								<td>500</td>
-							</tr>
-							<tr>
-								<td class="margin left">Profundidade do Assento</td>
-								<td>-</td>
-								<td>490</td>
-							</tr>
-						</tbody>
-					</table>
+						</table>
+					</div>	
 
 					<div class="acabamentosDisponiveis">
 						<span class="titulo">*Acabamentos disponíveis</span>
 
-						<ul class="acabamentosUl clearfix">
-							<li class="acabamentosLi clearfix">
-								<span class="tipo">Asento</span>
-								<span class="cor" style="background-color: #000000"></span>
-								<span class="acabamentosTxt">
-									<span>Couríssimo</span>
-									<span>101 - Preto</span>
-								</span>
-							</li>
-							<li class="acabamentosLi clearfix">
-								<span class="tipo">Encosto</span>
-								<span class="cor">
-									<img class="imgCor" src="{$IMG_DIR}linhas/cor.jpg" alt="" />
-								</span>
-								<span class="acabamentosTxt">
-									<span>Tela Preta</span>
-									<span>Cod 121</span>
-								</span>
-							</li>
-						</ul>
+						<div class="listaAcabamentos">
+							<ul class="acabamentosUl scroll clearfix">
+								<li class="acabamentosLi">
+									<span style="background-color: #000000" class="cor ir">Preto</span>
+									<span class="acabamentosTxt">
+										<span>Preto</span>
+										<span>Cod 120</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #f4f2ce" class="cor ir">Bege</span>
+									<span class="acabamentosTxt">
+										<span>Bege</span>
+										<span>Cod 121</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #454540" class="cor ir">Cinza</span>
+									<span class="acabamentosTxt">
+										<span>Cinza</span>
+										<span>Cod 122</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #c4bf76" class="cor ir">Amarelo</span>
+									<span class="acabamentosTxt">
+										<span>Amarelo</span>
+										<span>Cod 123</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #795e2b" class="cor ir">Marron</span>
+									<span class="acabamentosTxt">
+										<span>Marron</span>
+										<span>Cod 124</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #000000" class="cor ir">Preto</span>
+									<span class="acabamentosTxt">
+										<span>Preto</span>
+										<span>Cod 120</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #f4f2ce" class="cor ir">Bege</span>
+									<span class="acabamentosTxt">
+										<span>Bege</span>
+										<span>Cod 121</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #454540" class="cor ir">Cinza</span>
+									<span class="acabamentosTxt">
+										<span>Cinza</span>
+										<span>Cod 122</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #c4bf76" class="cor ir">Amarelo</span>
+									<span class="acabamentosTxt">
+										<span>Amarelo</span>
+										<span>Cod 123</span>
+									</span>
+								</li>
+								<li class="acabamentosLi">
+									<span style="background-color: #795e2b" class="cor ir">Marron</span>
+									<span class="acabamentosTxt">
+										<span>Marron</span>
+										<span>Cod 124</span>
+									</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section-->
+	</section>
 
 	<section class="sectionLinha sectionBotoes">
 		<div class="container">

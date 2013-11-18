@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-11-13 14:22:05
+<?php /* Smarty version Smarty-3.1.12, created on 2013-11-18 11:17:40
          compiled from "templates/linha-cadeiras.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:800709865283a72d77cb42-20869402%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1406286477528a1374ef7bd2-19867610%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '800709865283a72d77cb42-20869402',
+  'nocache_hash' => '1406286477528a1374ef7bd2-19867610',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5283a72d848658_30977870',
+  'unifunc' => 'content_528a1375070b37_51980384',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5283a72d848658_30977870')) {function content_5283a72d848658_30977870($_smarty_tpl) {?><!-- LINHA CADEIRAS -->
+<?php if ($_valid && !is_callable('content_528a1375070b37_51980384')) {function content_528a1375070b37_51980384($_smarty_tpl) {?><!-- LINHA CADEIRAS -->
 <section class="conteudoLinha">
 	<header class="headerLinha">
 		<img class="bannerImg" src="<?php echo $_smarty_tpl->tpl_vars['IMG_DIR']->value;?>
