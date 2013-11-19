@@ -7,9 +7,9 @@
 				<p class="paginaDescricao">
 					Navegue pelo mapa ou selecione sua região e encontre a Caderode mais próxima de você.
 				</p>
-				<a class="btLojista" href="javascript:;">
-					<span class="btIcone botoesIconeLogista"><span></span></span>
-					Seja um logista Caderode
+				<a class="btLojista btModal" href="#modalLojista">
+					<span class="btIcone botoesIconeLojista"><span></span></span>
+					Seja um lojista Caderode
 				</a>
 			</div>
 		</div>

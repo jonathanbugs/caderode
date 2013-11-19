@@ -85,7 +85,7 @@ html[xmlns] .clearfix {
 /* ============
    CLASSES PADROES
    ============ */
-.ir { 
+.ir {
 	text-indent: -100%;
 	overflow: hidden;
 	white-space: nowrap;
@@ -94,11 +94,11 @@ html[xmlns] .clearfix {
 	line-height: 0;
 }
 
-.table { 
+.table {
 	display: table;
 }
 
-.tableCell { 
+.tableCell {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -385,6 +385,7 @@ h1,h2,h3,h4,h5,h6{
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 199;
 	-moz-transition: color 0.3s ease 0s;
 	-webkit-transition: color 0.3s ease 0s;
 	-o-transition: color 0.3s ease 0s;
@@ -461,7 +462,7 @@ h1,h2,h3,h4,h5,h6{
 
 .btAzulRodape {
 	width: 251px;
-	margin-top: 5px; 
+	margin-top: 5px;
 }
 
 .bt .icone {
@@ -618,7 +619,7 @@ h1,h2,h3,h4,h5,h6{
 	transition: color 0.3s ease 0s;
 }
 
-.menuLink:before, 
+.menuLink:before,
 .menuLink:after {
 	background: #009bb3;
 	width: 100%;
@@ -653,9 +654,9 @@ h1,h2,h3,h4,h5,h6{
 	transform: translateY(10px);
 }
 
-.menuLink:hover:before, 
-.menuLink:focus:before, 
-.menuLink:hover:after, 
+.menuLink:hover:before,
+.menuLink:focus:before,
+.menuLink:hover:after,
 .menuLink:focus:after {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
@@ -692,7 +693,7 @@ h1,h2,h3,h4,h5,h6{
 	display: block;
 }
 
-.menuLinkDropAtivo:before, 
+.menuLinkDropAtivo:before,
 .menuLinkDropAtivo:after {
 	display: none;
 }
@@ -1091,7 +1092,7 @@ h1,h2,h3,h4,h5,h6{
 
 .pageBanner .cycle-pager-active {
 	background: #fdb913;
-	border-color: #fdb913; 
+	border-color: #fdb913;
 	top: -5px;
 	height: 23px;
 }
@@ -1202,7 +1203,7 @@ h1,h2,h3,h4,h5,h6{
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	border-bottom-left-radius:0;
-	border-bottom-right-radius:0; 
+	border-bottom-right-radius:0;
 }
 
 .formBuscaLoja .btSelect .icone,
@@ -1342,7 +1343,7 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'source_sans_proregular', arial, sans-serif;
 	color: #FFF;
 	font-size: 14px;
-	display: block;	
+	display: block;
 	min-height: 15px;
 	text-align: left;
 }
@@ -1412,7 +1413,7 @@ h1,h2,h3,h4,h5,h6{
 	padding: 14px 20px;
 }
 
-.relativeModal, 
+.relativeModal,
 .relativeModalTexarea {
 	position: relative;
 	margin-bottom: 5px;
@@ -1511,7 +1512,7 @@ h1,h2,h3,h4,h5,h6{
 	border: none;
 	width: 100%;
 	height: 48px;
-	line-height: 48px; 
+	line-height: 48px;
 	margin-top: 5px;
 	background: #ff0000;
 	color: #FFF;
@@ -1601,7 +1602,7 @@ h1,h2,h3,h4,h5,h6{
 	border-top-left-radius:20px;
 	border-top-right-radius:20px;
 	border-bottom-left-radius:0;
-	border-bottom-right-radius:0; 
+	border-bottom-right-radius:0;
 	border-bottom: none;
 }
 
@@ -1702,7 +1703,7 @@ h1,h2,h3,h4,h5,h6{
 .headerRelacionados {
 	background: #fdb913;
 	padding: 60px 0 150px 0;
-}	
+}
 
 .headerRelacionados .titulo {
 	font-family: 'regan_altregular', arial, sans-serif;
@@ -1924,7 +1925,7 @@ h1,h2,h3,h4,h5,h6{
 		border-bottom: none;
 	}
 
-	.menuLink:before, 
+	.menuLink:before,
 	.menuLink:after {
 		display: none;
 	}
@@ -2000,7 +2001,7 @@ h1,h2,h3,h4,h5,h6{
 		margin-left: -110px;
 		max-width: 220px;
 	}
-	
+
 
 
 
