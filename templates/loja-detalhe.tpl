@@ -5,9 +5,9 @@
 			<div class="containerGeral">
 				<span class="paginaTitulo">Lojas</span>
 				<span class="tituloLoja">Caderode campinas</span>
-				<a class="btLojista" href="javascript:;">
-					<span class="btIcone botoesIconeLogista"><span></span></span>
-					Seja um logista Caderode
+				<a class="btLojista btModal" href="#modalLojista">
+					<span class="btIcone botoesIconeLojista"><span></span></span>
+					Seja um lojista Caderode
 				</a>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 										<li class="infosLi infosLiEndereco">
 											Av. Therezinha Pauletti Sanvitto, nº 52 Loja 04
 											Bairro Villagio Iguatemi - Caxias do Sul - RS
-											<a class="linkRota" href="javascript:;">Traçar Rota</a> 
+											<a class="linkRota" href="javascript:;">Traçar Rota</a>
 										</li>
 									</ul>
 								</div>
@@ -86,7 +86,7 @@
 						</div>
 					</div>
 
-				
+
 					<!-- MAPA LOJA -->
 					<!--div class="blocoMapaLojas">
 						<div id="mapaLojas">
