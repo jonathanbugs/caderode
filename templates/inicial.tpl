@@ -4,7 +4,7 @@
 		<div class="confortoTexto">
 			<span class="confortoTitulo">Conforto para inquietos</span>
 			<h2 class="confortoDescricao">
-				Caderode é a única marca de móveis corporativos que orienta seus projetos e produtos para os profissionais inquietos que buscam algo prático e acessível quando o ambiente de trabalho deve ser tão inspirador quanto sua vida. 
+				Caderode é a única marca de móveis corporativos que orienta seus projetos e produtos para os profissionais inquietos que buscam algo prático e acessível quando o ambiente de trabalho deve ser tão inspirador quanto sua vida.
 			</h2>
 		</div>
 	</div>
@@ -113,6 +113,15 @@
 								<span class="produtoTitulo">
 									<span class="linha">Linha</span>
 									<span class="titulo">Li-Linea</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/mobiliario/1.jpg" data-src2x="{$IMG_DIR}/produtos/mobiliario/1.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha</span>
+									<span class="titulo">Accord</span>
 								</span>
 							</a>
 						</li>
@@ -234,6 +243,117 @@
 								</span>
 							</a>
 						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/4.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/4.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C40</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/5.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/5.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C50</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/1.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/1.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C10</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/2.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/2.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C20</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/3.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/3.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C30</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/4.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/4.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C40</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/5.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/5.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C50</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/1.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/1.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C10</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/2.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/2.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C20</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/3.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/3.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C30</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/4.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/4.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C40</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+						<li class="produtosLi">
+							<a class="produtosLink" href="javascript:;">
+								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/5.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/5.jpg" alt="" />
+								<span class="produtoTitulo">
+									<span class="linha">Linha C50</span>
+									<span class="titulo">Chroma</span>
+								</span>
+							</a>
+						</li>
+
 						<li class="produtosLi">
 							<a class="produtosLink" href="javascript:;">
 								<img class="produtosImg" src="{$IMG_DIR}/produtos/cadeiras/4.jpg" data-src2x="{$IMG_DIR}/produtos/cadeiras/4.jpg" alt="" />

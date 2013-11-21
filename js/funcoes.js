@@ -204,7 +204,7 @@ function imgRetina(){
    ============ */
 function abrirMenu(){
 	var divMenu = $('.blocoMenu');
-	
+
 	$('.btMenu').on('click', function() {
 		var ele = $(this);
 		$('html, body').addClass('menuAberto');
@@ -214,7 +214,7 @@ function abrirMenu(){
 
 		if (divMenu.is(":hidden")) {
 			divMenu.slideDown(300);
-		} 
+		}
 	});
 
 	$('.btFecharMenu').on('click', function() {
@@ -255,37 +255,46 @@ function menuFixo(){
    ============ */
 function menuDrop(){
 	if (windowWidth > 1023){
-		var menuDrop = $('.menuProdutos');
+		var $menuDrop = $('.menuProdutos');
 
 		if (!isiPad && !isiPhone && !isiAndroid){
-			$('.menuLinkDrop').on('click', function() {
-				var ele = $(this);
-				menuDrop.addClass('menuDropAberto');
+			$('.menuUl').on('click', '.menuLinkDrop', function(event) {
+				$menuDrop.addClass('menuDropAberto');
 				$('.menuLinkDrop').removeClass('menuLinkDropAtivo');
-				ele.addClass('menuLinkDropAtivo');
+				$(this).addClass('menuLinkDropAtivo');
+			}).on('click', '.menuLinkDropAtivo', function(event) {
+				$menuDrop.removeClass('menuDropAberto');
+				$('.menuLinkDrop').removeClass('menuLinkDropAtivo');
 			});
 
+			/*$('.menuLinkDrop').on('click', function() {
+				var ele = $(this);
+				$menuDrop.addClass('menuDropAberto');
+				$('.menuLinkDrop').removeClass('menuLinkDropAtivo');
+				ele.addClass('menuLinkDropAtivo');
+			});*/
+
 			$('.btFecharMenuDrop').on('click', function() {
-				menuDrop.removeClass('menuDropAberto');
+				$menuDrop.removeClass('menuDropAberto');
 				$('.menuLinkDrop').removeClass('menuLinkDropAtivo');
 			});
 
 			$(".tabsMenuLink").on('click', function(e){
-				var tab = $(this),
+				var $tab = $(this),
 					dataLista,
 					listaProdutosMenu = $('.menuProdutos');
 
 				$('.tabsMenuLink').removeClass('tabsMenuLinkAtivo');
-				tab.addClass('tabsMenuLinkAtivo');
+				$tab.addClass('tabsMenuLinkAtivo');
 
-				dataLista = tab.attr('data-tipo');
-				console.log(dataLista);
+				dataLista = $tab.attr('data-tipo');
+				// console.log(dataLista);
 
 				listaProdutosMenu.find('.listaProdutosUl').hide();
 				listaProdutosMenu.find('#'+dataLista).css({
 					'display': 'inline-block'
 				});
-			});	
+			});
 		}
 	}
 }
@@ -301,18 +310,18 @@ function abrirBusca(){
 		if (!isiPad && !isiPhone && !isiAndroid){
 
 			var blocoBusca = $('.blocoBuscar');
-			
+
 			$('.btBuscar').on('click', function() {
 				$('.navMenu, .linksUl').hide();
 				$('.blocoBuscar').animate({
-					width: 835	
+					width: 835
 				}, 200);
 			});
 
 			$('.fecharBusca').on('click', function() {
 				$('.navMenu, .linksUl').show();
 				$('.blocoBuscar').animate({
-					width: 0	
+					width: 0
 				}, 10);
 			});
 		}
